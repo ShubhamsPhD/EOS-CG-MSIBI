@@ -25,6 +25,8 @@ Allows us to set a pair to not be optimised by a particular state + instead of e
 
 run_msibi_v5: Runs on the main build. Tries to copy whats been done in v4 with those v4 features added in script instead of msibi directly.
 
+run_msibi_v5_34.py, run_msibi_cholPairs.py, and run_msibi_ffaPairs.py were used to build the "working" self assembling EOS model.
+
 2. SUBMIT SCRIPTS:
 
 2 submit scripts are present, one using the cpu and one the gpu. CPU is only used for TESTING PURPOSES, and not an actual run since it is quite slow.
