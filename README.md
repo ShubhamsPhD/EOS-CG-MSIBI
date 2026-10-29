@@ -27,6 +27,7 @@ run_msibi_v5: Runs on the main build. Tries to copy whats been done in v4 with t
 
 NOTE: The files in originalRun were used in the MSIBI run to create the self-assembling LPP. While we could get an LPP with an almost experimentally observed thickness, the main issue seen is the presence of EOS chains in the central layer
   run_msibi_v5_34.py, run_msibi_cholPairs.py, and run_msibi_ffaPairs.py were used to build the "working" self assembling EOS model.
+  Do note that not all target state files are included since the file size > 100 mb. So if you need those, do drop me a message.
 
 The ATM-to-CG-Mapping folder contains the files used to map the atomistic target states to a CG representation.
 
