@@ -1,0 +1,2003 @@
+[38;5;127mapps[0m/[38;5;172manaconda3[0m/[38;5;67m2023.03[0m/[38;5;68mbin[0m
+ |
+ [0;32mOK[0m
+Loaded bond types: ['amide-mhead2', 'amide-tail', 'chead-ring1', 'chead-ring2', 'chme-ring2', 'chme-ring3', 'ctail-cterm', 'ctail-ring4', 'ester-sticky', 'ester-tail', 'ester-tail2', 'head-tail', 'mhead2-oh1', 'mhead2-oh2', 'mhead2-tail', 'ring1-ring2', 'ring1-ring3', 'ring1-ring4', 'ring2-ring3', 'ring3-ring4', 'tail-tail', 'tail-tail2', 'tail-taild', 'tail-ter2', 'taild-taild']
+Loaded angle types: ['amide-mhead2-oh1', 'amide-mhead2-oh2', 'amide-mhead2-tail', 'amide-tail-tail', 'chead-ring1-ring2', 'chead-ring1-ring3', 'chead-ring1-ring4', 'chead-ring2-chme', 'chead-ring2-ring1', 'chead-ring2-ring3', 'chme-ring2-ring1', 'chme-ring2-ring3', 'chme-ring3-ring1', 'chme-ring3-ring2', 'chme-ring3-ring4', 'ctail-ring4-ring1', 'ctail-ring4-ring3', 'cterm-ctail-ring4', 'ester-tail-tail', 'ester-tail2-tail', 'head-tail-tail', 'mhead2-amide-tail', 'mhead2-tail-tail', 'oh1-mhead2-oh2', 'oh1-mhead2-tail', 'oh2-mhead2-tail', 'ring1-chead-ring2', 'ring1-ring2-ring3', 'ring1-ring3-ring2', 'ring1-ring3-ring4', 'ring1-ring4-ring3', 'ring2-ring1-ring3', 'ring2-ring1-ring4', 'ring2-ring3-ring4', 'ring3-ring1-ring4', 'sticky-ester-tail', 'sticky-ester-tail2', 'tail-ester-tail2', 'tail-tail-tail', 'tail-tail-tail2', 'tail-tail-taild', 'tail-tail-ter2', 'tail-taild-taild', 'taild-tail-ter2']
+Added fixed potentials: PAIR_DIR=265 tables, EXTRA_DIR=4 tables
+Types in all states: ['amide', 'ester', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2'] Number of types: 10
+Global safe r_cut: 3.2319028
+Types in ANY state: ['amide', 'chead', 'chme', 'ctail', 'cterm', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'ring1', 'ring2', 'ring3', 'ring4', 'sticky', 'tail', 'tail2', 'taild', 'ter2', 'water']
+Types in ALL states: ['amide', 'ester', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2']
+[OPTIMIZE] amide-ester
+source: init_dir -> ester-amide.txt
+used states: ['EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer']
+Added OPTIMIZE amide-ester (source=init_dir, file=ester-amide.txt)
+[FIXED] amide-sticky
+source: learnt from outputs -> amide-sticky.csv
+used states: ['EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer']
+Added FIXED amide-sticky (previous stage; source=learnt from outputs, file=amide-sticky.csv)
+[FIXED] amide-tail2
+source: init_dir -> tail2-amide.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED amide-tail2 (later stage; source=init_dir, file=tail2-amide.txt)
+[FIXED] amide-taild
+source: init_dir -> taild-amide.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED amide-taild (later stage; source=init_dir, file=taild-amide.txt)
+[FIXED] chead-ester
+source: init_dir -> ester-chead.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED chead-ester (not present in all states; source=init_dir, file=ester-chead.txt)
+[FIXED] chead-sticky
+source: previous stage but no learned output -> init_dir -> sticky-chead.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED chead-sticky (previous stage, not present in all states; source=previous stage but no learned output -> init_dir, file=sticky-chead.txt)
+[FIXED] chead-tail2
+source: init_dir -> tail2-chead.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED chead-tail2 (later stage, not present in all states; source=init_dir, file=tail2-chead.txt)
+[FIXED] chead-taild
+source: init_dir -> taild-chead.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED chead-taild (later stage, not present in all states; source=init_dir, file=taild-chead.txt)
+[FIXED] chme-ester
+source: init_dir -> ester-chme.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED chme-ester (not present in all states; source=init_dir, file=ester-chme.txt)
+[FIXED] chme-sticky
+source: previous stage but no learned output -> init_dir -> sticky-chme.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED chme-sticky (previous stage, not present in all states; source=previous stage but no learned output -> init_dir, file=sticky-chme.txt)
+[FIXED] chme-tail2
+source: init_dir -> tail2-chme.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED chme-tail2 (later stage, not present in all states; source=init_dir, file=tail2-chme.txt)
+[FIXED] chme-taild
+source: init_dir -> taild-chme.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED chme-taild (later stage, not present in all states; source=init_dir, file=taild-chme.txt)
+[FIXED] ctail-ester
+source: init_dir -> ester-ctail.txt
+used states: ['EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ctail-ester (not present in all states; source=init_dir, file=ester-ctail.txt)
+[FIXED] ctail-sticky
+source: previous stage but no learned output -> init_dir -> sticky-ctail.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ctail-sticky (previous stage, not present in all states; source=previous stage but no learned output -> init_dir, file=sticky-ctail.txt)
+[FIXED] ctail-tail2
+source: init_dir -> tail2-ctail.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ctail-tail2 (later stage, not present in all states; source=init_dir, file=tail2-ctail.txt)
+[FIXED] ctail-taild
+source: init_dir -> taild-ctail.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ctail-taild (later stage, not present in all states; source=init_dir, file=taild-ctail.txt)
+[FIXED] cterm-ester
+source: init_dir -> ester-cterm.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED cterm-ester (not present in all states; source=init_dir, file=ester-cterm.txt)
+[FIXED] cterm-sticky
+source: previous stage but no learned output -> init_dir -> sticky-cterm.txt
+used states: ['EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED cterm-sticky (previous stage, not present in all states; source=previous stage but no learned output -> init_dir, file=sticky-cterm.txt)
+[FIXED] cterm-tail2
+source: init_dir -> tail2-cterm.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED cterm-tail2 (later stage, not present in all states; source=init_dir, file=tail2-cterm.txt)
+[FIXED] cterm-taild
+source: init_dir -> taild-cterm.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED cterm-taild (later stage, not present in all states; source=init_dir, file=taild-cterm.txt)
+[OPTIMIZE] ester-ester
+source: init_dir -> ester-ester.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: []
+Added OPTIMIZE ester-ester (source=init_dir, file=ester-ester.txt)
+[FIXED] ester-head
+source: init_dir -> ester-head.txt
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL']
+Added FIXED ester-head (not present in all states; source=init_dir, file=ester-head.txt)
+[OPTIMIZE] ester-mhead2
+source: init_dir -> ester-mhead2.txt
+used states: ['EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer']
+Added OPTIMIZE ester-mhead2 (source=init_dir, file=ester-mhead2.txt)
+[OPTIMIZE] ester-oh1
+source: init_dir -> ester-oh1.txt
+used states: ['EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer']
+Added OPTIMIZE ester-oh1 (source=init_dir, file=ester-oh1.txt)
+[OPTIMIZE] ester-oh2
+source: init_dir -> ester-oh2.txt
+used states: ['EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer']
+Added OPTIMIZE ester-oh2 (source=init_dir, file=ester-oh2.txt)
+[FIXED] ester-ring1
+source: init_dir -> ester-ring1.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ester-ring1 (not present in all states; source=init_dir, file=ester-ring1.txt)
+[FIXED] ester-ring2
+source: init_dir -> ester-ring2.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ester-ring2 (not present in all states; source=init_dir, file=ester-ring2.txt)
+[FIXED] ester-ring3
+source: init_dir -> ester-ring3.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ester-ring3 (not present in all states; source=init_dir, file=ester-ring3.txt)
+[FIXED] ester-ring4
+source: init_dir -> ester-ring4.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ester-ring4 (not present in all states; source=init_dir, file=ester-ring4.txt)
+[OPTIMIZE] ester-sticky
+source: learnt from outputs -> ester-sticky.csv
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: []
+Added OPTIMIZE ester-sticky (source=learnt from outputs, file=ester-sticky.csv)
+[OPTIMIZE] ester-tail
+source: init_dir -> ester-tail.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: []
+Added OPTIMIZE ester-tail (source=init_dir, file=ester-tail.txt)
+[OPTIMIZE] ester-tail2
+source: init_dir -> ester-tail2.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: []
+Added OPTIMIZE ester-tail2 (source=init_dir, file=ester-tail2.txt)
+[OPTIMIZE] ester-taild
+source: init_dir -> taild-ester.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_pure_extended']
+Added OPTIMIZE ester-taild (source=init_dir, file=taild-ester.txt)
+[OPTIMIZE] ester-ter2
+source: init_dir -> ester-ter2.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_pure_extended']
+Added OPTIMIZE ester-ter2 (source=init_dir, file=ester-ter2.txt)
+[FIXED] head-sticky
+source: previous stage but no learned output -> init_dir -> sticky-head.txt
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL']
+Added FIXED head-sticky (previous stage, not present in all states; source=previous stage but no learned output -> init_dir, file=sticky-head.txt)
+[FIXED] head-tail2
+source: init_dir -> tail2-head.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED head-tail2 (later stage, not present in all states; source=init_dir, file=tail2-head.txt)
+[FIXED] head-taild
+source: init_dir -> taild-head.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED head-taild (later stage, not present in all states; source=init_dir, file=taild-head.txt)
+[FIXED] mhead2-sticky
+source: learnt from outputs -> mhead2-sticky.csv
+used states: ['EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer']
+Added FIXED mhead2-sticky (previous stage; source=learnt from outputs, file=mhead2-sticky.csv)
+[FIXED] mhead2-tail2
+source: init_dir -> tail2-mhead2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED mhead2-tail2 (later stage; source=init_dir, file=tail2-mhead2.txt)
+[FIXED] mhead2-taild
+source: init_dir -> taild-mhead2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED mhead2-taild (later stage; source=init_dir, file=taild-mhead2.txt)
+[FIXED] oh1-sticky
+source: learnt from outputs -> oh1-sticky.csv
+used states: ['EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer']
+Added FIXED oh1-sticky (previous stage; source=learnt from outputs, file=oh1-sticky.csv)
+[FIXED] oh1-tail2
+source: init_dir -> tail2-oh1.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED oh1-tail2 (later stage; source=init_dir, file=tail2-oh1.txt)
+[FIXED] oh1-taild
+source: init_dir -> taild-oh1.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED oh1-taild (later stage; source=init_dir, file=taild-oh1.txt)
+[FIXED] oh2-sticky
+source: learnt from outputs -> oh2-sticky.csv
+used states: ['EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer']
+Added FIXED oh2-sticky (previous stage; source=learnt from outputs, file=oh2-sticky.csv)
+[FIXED] oh2-tail2
+source: init_dir -> tail2-oh2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED oh2-tail2 (later stage; source=init_dir, file=tail2-oh2.txt)
+[FIXED] oh2-taild
+source: init_dir -> taild-oh2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED oh2-taild (later stage; source=init_dir, file=taild-oh2.txt)
+[FIXED] ring1-sticky
+source: previous stage but no learned output -> init_dir -> ring1-sticky.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ring1-sticky (previous stage, not present in all states; source=previous stage but no learned output -> init_dir, file=ring1-sticky.txt)
+[FIXED] ring1-tail2
+source: init_dir -> ring1-tail2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ring1-tail2 (later stage, not present in all states; source=init_dir, file=ring1-tail2.txt)
+[FIXED] ring1-taild
+source: init_dir -> ring1-taild.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ring1-taild (later stage, not present in all states; source=init_dir, file=ring1-taild.txt)
+[FIXED] ring2-sticky
+source: previous stage but no learned output -> init_dir -> ring2-sticky.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ring2-sticky (previous stage, not present in all states; source=previous stage but no learned output -> init_dir, file=ring2-sticky.txt)
+[FIXED] ring2-tail2
+source: init_dir -> ring2-tail2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ring2-tail2 (later stage, not present in all states; source=init_dir, file=ring2-tail2.txt)
+[FIXED] ring2-taild
+source: init_dir -> ring2-taild.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ring2-taild (later stage, not present in all states; source=init_dir, file=ring2-taild.txt)
+[FIXED] ring3-sticky
+source: previous stage but no learned output -> init_dir -> ring3-sticky.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ring3-sticky (previous stage, not present in all states; source=previous stage but no learned output -> init_dir, file=ring3-sticky.txt)
+[FIXED] ring3-tail2
+source: init_dir -> ring3-tail2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ring3-tail2 (later stage, not present in all states; source=init_dir, file=ring3-tail2.txt)
+[FIXED] ring3-taild
+source: init_dir -> ring3-taild.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ring3-taild (later stage, not present in all states; source=init_dir, file=ring3-taild.txt)
+[FIXED] ring4-sticky
+source: previous stage but no learned output -> init_dir -> ring4-sticky.txt
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS_CHOL']
+ignored states: ['EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_FFA']
+Added FIXED ring4-sticky (previous stage, not present in all states; source=previous stage but no learned output -> init_dir, file=ring4-sticky.txt)
+[FIXED] ring4-tail2
+source: init_dir -> ring4-tail2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ring4-tail2 (later stage, not present in all states; source=init_dir, file=ring4-tail2.txt)
+[FIXED] ring4-taild
+source: init_dir -> ring4-taild.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED ring4-taild (later stage, not present in all states; source=init_dir, file=ring4-taild.txt)
+[FIXED] sticky-sticky
+source: learnt from outputs -> sticky-sticky.csv
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: []
+Added FIXED sticky-sticky (previous stage; source=learnt from outputs, file=sticky-sticky.csv)
+[FIXED] sticky-tail
+source: learnt from outputs -> sticky-tail.csv
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: []
+Added FIXED sticky-tail (previous stage; source=learnt from outputs, file=sticky-tail.csv)
+[FIXED] sticky-tail2
+source: learnt from outputs -> sticky-tail2.csv
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: []
+Added FIXED sticky-tail2 (previous stage, later stage; source=learnt from outputs, file=sticky-tail2.csv)
+[FIXED] sticky-taild
+source: learnt from outputs -> sticky-taild.csv
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_pure_extended']
+Added FIXED sticky-taild (previous stage, later stage; source=learnt from outputs, file=sticky-taild.csv)
+[FIXED] sticky-ter2
+source: learnt from outputs -> sticky-ter2.csv
+used states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_LPP', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+ignored states: ['EOS_pure_extended']
+Added FIXED sticky-ter2 (previous stage; source=learnt from outputs, file=sticky-ter2.csv)
+[FIXED] tail-tail2
+source: init_dir -> tail2-tail.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED tail-tail2 (later stage; source=init_dir, file=tail2-tail.txt)
+[FIXED] tail-taild
+source: init_dir -> taild-tail.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED tail-taild (later stage; source=init_dir, file=taild-tail.txt)
+[FIXED] tail2-tail2
+source: init_dir -> tail2-tail2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED tail2-tail2 (later stage; source=init_dir, file=tail2-tail2.txt)
+[FIXED] tail2-taild
+source: init_dir -> tail2-taild.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED tail2-taild (later stage; source=init_dir, file=tail2-taild.txt)
+[FIXED] tail2-ter2
+source: init_dir -> tail2-ter2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED tail2-ter2 (later stage; source=init_dir, file=tail2-ter2.txt)
+[FIXED] taild-taild
+source: init_dir -> taild-taild.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED taild-taild (later stage; source=init_dir, file=taild-taild.txt)
+[FIXED] taild-ter2
+source: init_dir -> taild-ter2.txt
+used states: ['EOS_LPP']
+ignored states: ['EOS_CHOL_1_1_bilayer', 'EOS_CHOL_1_2_bilayer', 'EOS_pure_extended', 'bulk_EOS', 'bulk_EOS_CHOL', 'bulk_EOS_FFA']
+Added FIXED taild-ter2 (later stage; source=init_dir, file=taild-ter2.txt)
+Added optimize=True pairs: 10
+Added optimize=False (fixed) pairs: 60
+Skipped (type missing in any state): 0
+Staring cycle 1/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fbd89910>
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 122.6898827791537
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fb9a68d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 180.51820588746193
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fd71c610>
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 208.7245727603153
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fb9e0750>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 185.26161692370948
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fbab3ed0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 136.8465287623781
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fd6ef9d0>
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 100.94335277887238
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8fd740d50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.83585562551072
+
+Force: amide-ester, State: bulk_EOS, Iteration: 0, Fit score:0.965223
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.915099
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.937167
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 0, Fit score:0.718224
+
+Force: amide-ester, State: EOS_LPP, Iteration: 0, Fit score:0.879721
+
+Force: ester-ester, State: bulk_EOS, Iteration: 0, Fit score:0.911622
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.921825
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.899946
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 0, Fit score:0.938713
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 0, Fit score:0.933291
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 0, Fit score:0.895278
+
+Force: ester-ester, State: EOS_LPP, Iteration: 0, Fit score:0.934429
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 0, Fit score:0.926694
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.911445
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.921516
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 0, Fit score:0.858534
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 0, Fit score:0.889765
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 0, Fit score:0.920318
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.895866
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.914960
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 0, Fit score:0.703662
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 0, Fit score:0.918750
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 0, Fit score:0.944441
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.916659
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.902987
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 0, Fit score:0.844255
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 0, Fit score:0.900882
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 0, Fit score:0.926515
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.921370
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.909174
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 0, Fit score:0.923091
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 0, Fit score:0.928335
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 0, Fit score:0.911046
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 0, Fit score:0.924478
+
+Force: ester-tail, State: bulk_EOS, Iteration: 0, Fit score:0.933809
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.947660
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.927973
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 0, Fit score:0.957043
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 0, Fit score:0.956099
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 0, Fit score:0.927455
+
+Force: ester-tail, State: EOS_LPP, Iteration: 0, Fit score:0.949196
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 0, Fit score:0.915302
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.910916
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.883825
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 0, Fit score:0.915492
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 0, Fit score:0.917975
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 0, Fit score:0.856417
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 0, Fit score:0.937321
+
+Force: ester-taild, State: bulk_EOS, Iteration: 0, Fit score:0.890655
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.900892
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.882132
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 0, Fit score:0.883714
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 0, Fit score:0.858624
+
+Force: ester-taild, State: EOS_LPP, Iteration: 0, Fit score:0.843423
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 0, Fit score:0.911868
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 0, Fit score:0.930237
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.909135
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 0, Fit score:0.917076
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 0, Fit score:0.861096
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 0, Fit score:0.904774
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2
+Staring cycle 2/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fbdebc50>
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 122.42499558578315
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fb9a7a50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 179.17191267842546
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fd6c14d0>
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 206.65384163281647
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fbb6d3d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 185.06037156029075
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fb9cf390>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 136.1654772203735
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fbde2f90>
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 100.78300442660422
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8bc21d610>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.67187872365167
+
+Force: amide-ester, State: bulk_EOS, Iteration: 1, Fit score:0.924418
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.911406
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.912945
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 1, Fit score:0.715234
+
+Force: amide-ester, State: EOS_LPP, Iteration: 1, Fit score:0.922527
+
+Force: ester-ester, State: bulk_EOS, Iteration: 1, Fit score:0.883407
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.854504
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.900717
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 1, Fit score:0.852673
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 1, Fit score:0.872333
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 1, Fit score:0.837705
+
+Force: ester-ester, State: EOS_LPP, Iteration: 1, Fit score:0.869349
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 1, Fit score:0.918620
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.918452
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.926232
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 1, Fit score:0.846619
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 1, Fit score:0.907296
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 1, Fit score:0.926180
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.912617
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.928600
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 1, Fit score:0.719029
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 1, Fit score:0.906089
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 1, Fit score:0.931390
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.926913
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.935971
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 1, Fit score:0.793197
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 1, Fit score:0.936807
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 1, Fit score:0.882262
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.912692
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.897956
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 1, Fit score:0.859504
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 1, Fit score:0.900208
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 1, Fit score:0.888724
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 1, Fit score:0.897021
+
+Force: ester-tail, State: bulk_EOS, Iteration: 1, Fit score:0.929408
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.944911
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.919542
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 1, Fit score:0.950272
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 1, Fit score:0.947521
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 1, Fit score:0.922023
+
+Force: ester-tail, State: EOS_LPP, Iteration: 1, Fit score:0.926328
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 1, Fit score:0.891670
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.919968
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.911976
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 1, Fit score:0.864856
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 1, Fit score:0.903867
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 1, Fit score:0.811655
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 1, Fit score:0.887386
+
+Force: ester-taild, State: bulk_EOS, Iteration: 1, Fit score:0.920883
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.913239
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.893407
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 1, Fit score:0.895425
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 1, Fit score:0.844170
+
+Force: ester-taild, State: EOS_LPP, Iteration: 1, Fit score:0.893823
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 1, Fit score:0.927072
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 1, Fit score:0.910792
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.883868
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 1, Fit score:0.785519
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 1, Fit score:0.704951
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 1, Fit score:0.921463
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2
+Staring cycle 3/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fb9cca90>
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 118.58944865626441
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fd6ced90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 175.3615621874614
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fbdd0f10>
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 202.32287802668935
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8bc279050>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 185.0605833460906
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff9017114d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 136.02275278484564
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fd71cad0>
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 101.25846298133794
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8fd6dba90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.69053029770099
+
+Force: amide-ester, State: bulk_EOS, Iteration: 2, Fit score:0.933209
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.931300
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.915438
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 2, Fit score:0.616560
+
+Force: amide-ester, State: EOS_LPP, Iteration: 2, Fit score:0.936252
+
+Force: ester-ester, State: bulk_EOS, Iteration: 2, Fit score:0.870348
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.844099
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.877389
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 2, Fit score:0.891489
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 2, Fit score:0.901558
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 2, Fit score:0.803894
+
+Force: ester-ester, State: EOS_LPP, Iteration: 2, Fit score:0.899138
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 2, Fit score:0.913691
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.909034
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.921539
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 2, Fit score:0.666872
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 2, Fit score:0.959556
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 2, Fit score:0.913338
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.926762
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.927175
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 2, Fit score:0.498683
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 2, Fit score:0.934500
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 2, Fit score:0.937588
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.920199
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.916700
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 2, Fit score:0.729361
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 2, Fit score:0.935434
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 2, Fit score:0.867029
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.838858
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.879982
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 2, Fit score:0.901727
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 2, Fit score:0.916609
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 2, Fit score:0.833778
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 2, Fit score:0.931241
+
+Force: ester-tail, State: bulk_EOS, Iteration: 2, Fit score:0.898699
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.945222
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.896957
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 2, Fit score:0.944506
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 2, Fit score:0.944998
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 2, Fit score:0.926929
+
+Force: ester-tail, State: EOS_LPP, Iteration: 2, Fit score:0.931376
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 2, Fit score:0.861158
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.848456
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.871810
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 2, Fit score:0.889080
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 2, Fit score:0.882563
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 2, Fit score:0.787929
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 2, Fit score:0.927369
+
+Force: ester-taild, State: bulk_EOS, Iteration: 2, Fit score:0.876524
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.929027
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.896244
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 2, Fit score:0.860472
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 2, Fit score:0.840244
+
+Force: ester-taild, State: EOS_LPP, Iteration: 2, Fit score:0.907736
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 2, Fit score:0.919932
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 2, Fit score:0.924473
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.932999
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 2, Fit score:0.873679
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 2, Fit score:0.867234
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 2, Fit score:0.936976
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2
+Staring cycle 4/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8bc2cf610>
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 118.88387954437475
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fba60d50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 177.2303471690763
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8bc203c50>
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 202.36038315144825
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff9017205d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 184.8491212672049
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fbac6450>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 136.00124058373243
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fd684890>
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 101.29793740069401
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8fd728350>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.70006044394594
+
+Force: amide-ester, State: bulk_EOS, Iteration: 3, Fit score:0.938216
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.904987
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.914641
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 3, Fit score:0.634884
+
+Force: amide-ester, State: EOS_LPP, Iteration: 3, Fit score:0.934047
+
+Force: ester-ester, State: bulk_EOS, Iteration: 3, Fit score:0.868167
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.871207
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.873778
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 3, Fit score:0.852342
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 3, Fit score:0.870235
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 3, Fit score:0.809831
+
+Force: ester-ester, State: EOS_LPP, Iteration: 3, Fit score:0.876175
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 3, Fit score:0.924752
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.903063
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.929180
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 3, Fit score:0.826414
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 3, Fit score:0.931262
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 3, Fit score:0.931694
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.907154
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.919453
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 3, Fit score:0.611784
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 3, Fit score:0.906644
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 3, Fit score:0.929089
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.905216
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.929103
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 3, Fit score:0.807830
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 3, Fit score:0.940660
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 3, Fit score:0.866706
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.860435
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.879896
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 3, Fit score:0.880674
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 3, Fit score:0.912925
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 3, Fit score:0.835233
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 3, Fit score:0.926092
+
+Force: ester-tail, State: bulk_EOS, Iteration: 3, Fit score:0.903359
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.948757
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.900572
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 3, Fit score:0.944593
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 3, Fit score:0.943520
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 3, Fit score:0.924983
+
+Force: ester-tail, State: EOS_LPP, Iteration: 3, Fit score:0.920868
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 3, Fit score:0.862910
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.872689
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.853655
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 3, Fit score:0.865047
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 3, Fit score:0.875088
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 3, Fit score:0.785483
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 3, Fit score:0.867993
+
+Force: ester-taild, State: bulk_EOS, Iteration: 3, Fit score:0.888177
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.940688
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.878187
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 3, Fit score:0.888912
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 3, Fit score:0.836273
+
+Force: ester-taild, State: EOS_LPP, Iteration: 3, Fit score:0.902896
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 3, Fit score:0.916103
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 3, Fit score:0.953586
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.892606
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 3, Fit score:0.771664
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 3, Fit score:0.746671
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 3, Fit score:0.937429
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2
+Staring cycle 5/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8bc13a890>
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 117.73454997162453
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fba39410>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 172.51348281540132
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fbaf0690>
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 199.9498133966367
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8febfcd50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 184.7463833075314
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fbba1f50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 136.1977235655342
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fba39410>
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 101.59321007811016
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8fe42e210>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.757733972932805
+
+Force: amide-ester, State: bulk_EOS, Iteration: 4, Fit score:0.936163
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.914704
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.911608
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 4, Fit score:0.591336
+
+Force: amide-ester, State: EOS_LPP, Iteration: 4, Fit score:0.940574
+
+Force: ester-ester, State: bulk_EOS, Iteration: 4, Fit score:0.887914
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.864384
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.835980
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 4, Fit score:0.876312
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 4, Fit score:0.910684
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 4, Fit score:0.765517
+
+Force: ester-ester, State: EOS_LPP, Iteration: 4, Fit score:0.902439
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 4, Fit score:0.919615
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.908824
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.907141
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 4, Fit score:0.696552
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 4, Fit score:0.936363
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 4, Fit score:0.924404
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.908838
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.901962
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 4, Fit score:0.677178
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 4, Fit score:0.909588
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 4, Fit score:0.935518
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.920379
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.912194
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 4, Fit score:0.731883
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 4, Fit score:0.930496
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 4, Fit score:0.885467
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.847591
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.829104
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 4, Fit score:0.903125
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 4, Fit score:0.925342
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 4, Fit score:0.786999
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 4, Fit score:0.918371
+
+Force: ester-tail, State: bulk_EOS, Iteration: 4, Fit score:0.885098
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.930660
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.883877
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 4, Fit score:0.941391
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 4, Fit score:0.949452
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 4, Fit score:0.925689
+
+Force: ester-tail, State: EOS_LPP, Iteration: 4, Fit score:0.919705
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 4, Fit score:0.878073
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.871414
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.841138
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 4, Fit score:0.890997
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 4, Fit score:0.871441
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 4, Fit score:0.757107
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 4, Fit score:0.915203
+
+Force: ester-taild, State: bulk_EOS, Iteration: 4, Fit score:0.876279
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.910816
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.848098
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 4, Fit score:0.908384
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 4, Fit score:0.833558
+
+Force: ester-taild, State: EOS_LPP, Iteration: 4, Fit score:0.905460
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 4, Fit score:0.920782
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 4, Fit score:0.945899
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.927953
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 4, Fit score:0.880515
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 4, Fit score:0.817926
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 4, Fit score:0.934965
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2
+Staring cycle 6/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8bc145450>
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 116.74778382853886
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff9017114d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 173.87259230692842
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fb9b1590>
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 200.59696002384143
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fba4b390>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 184.76109933865118
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff901a67050>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 136.11146447235254
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fb9baa50>
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 101.50142534422005
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8bc234e10>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.65316569388417
+
+Force: amide-ester, State: bulk_EOS, Iteration: 5, Fit score:0.942637
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.921177
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.920322
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 5, Fit score:0.591710
+
+Force: amide-ester, State: EOS_LPP, Iteration: 5, Fit score:0.906999
+
+Force: ester-ester, State: bulk_EOS, Iteration: 5, Fit score:0.897013
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.822759
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.838366
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 5, Fit score:0.871753
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 5, Fit score:0.883245
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 5, Fit score:0.789493
+
+Force: ester-ester, State: EOS_LPP, Iteration: 5, Fit score:0.901893
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 5, Fit score:0.932022
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.933740
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.924310
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 5, Fit score:0.727117
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 5, Fit score:0.916950
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 5, Fit score:0.924643
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.915441
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.918249
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 5, Fit score:0.650003
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 5, Fit score:0.925390
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 5, Fit score:0.953943
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.935559
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.927809
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 5, Fit score:0.758506
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 5, Fit score:0.911782
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 5, Fit score:0.895440
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.805806
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.843179
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 5, Fit score:0.907231
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 5, Fit score:0.907453
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 5, Fit score:0.812015
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 5, Fit score:0.926825
+
+Force: ester-tail, State: bulk_EOS, Iteration: 5, Fit score:0.885359
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.936632
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.889193
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 5, Fit score:0.940773
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 5, Fit score:0.944113
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 5, Fit score:0.925515
+
+Force: ester-tail, State: EOS_LPP, Iteration: 5, Fit score:0.929025
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 5, Fit score:0.886578
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.833378
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.833005
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 5, Fit score:0.889042
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 5, Fit score:0.868916
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 5, Fit score:0.775719
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 5, Fit score:0.904240
+
+Force: ester-taild, State: bulk_EOS, Iteration: 5, Fit score:0.885937
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.916457
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.852665
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 5, Fit score:0.904862
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 5, Fit score:0.844403
+
+Force: ester-taild, State: EOS_LPP, Iteration: 5, Fit score:0.888046
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 5, Fit score:0.902791
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 5, Fit score:0.947459
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.884591
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 5, Fit score:0.790706
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 5, Fit score:0.793649
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 5, Fit score:0.929052
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2
+Staring cycle 7/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8bc19c610>
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 116.01759363184813
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fe42cd90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 169.99125566170815
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fbaf1590>
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 199.6741329332281
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fd699e90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 185.1713972886521
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fba96610>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 135.8807498092997
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8bc28d090>
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 101.86449664740324
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8bc2c39d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.77084422610052
+
+Force: amide-ester, State: bulk_EOS, Iteration: 6, Fit score:0.913037
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.893583
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.909361
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 6, Fit score:0.508034
+
+Force: amide-ester, State: EOS_LPP, Iteration: 6, Fit score:0.903558
+
+Force: ester-ester, State: bulk_EOS, Iteration: 6, Fit score:0.871769
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.791047
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.870149
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 6, Fit score:0.875160
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 6, Fit score:0.890822
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 6, Fit score:0.740522
+
+Force: ester-ester, State: EOS_LPP, Iteration: 6, Fit score:0.912629
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 6, Fit score:0.898788
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.898250
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.897442
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 6, Fit score:0.642457
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 6, Fit score:0.892756
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 6, Fit score:0.898275
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.914218
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.901168
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 6, Fit score:0.423004
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 6, Fit score:0.863274
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 6, Fit score:0.908348
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.906152
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.899805
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 6, Fit score:0.685448
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 6, Fit score:0.898779
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 6, Fit score:0.870141
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.777313
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.876048
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 6, Fit score:0.895200
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 6, Fit score:0.921099
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 6, Fit score:0.752697
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 6, Fit score:0.935990
+
+Force: ester-tail, State: bulk_EOS, Iteration: 6, Fit score:0.872680
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.927027
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.877036
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 6, Fit score:0.935912
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 6, Fit score:0.943816
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 6, Fit score:0.926622
+
+Force: ester-tail, State: EOS_LPP, Iteration: 6, Fit score:0.909010
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 6, Fit score:0.863240
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.793359
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.869009
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 6, Fit score:0.889797
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 6, Fit score:0.858712
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 6, Fit score:0.731270
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 6, Fit score:0.921909
+
+Force: ester-taild, State: bulk_EOS, Iteration: 6, Fit score:0.861883
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.905861
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.867006
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 6, Fit score:0.925584
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 6, Fit score:0.852103
+
+Force: ester-taild, State: EOS_LPP, Iteration: 6, Fit score:0.840856
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 6, Fit score:0.910612
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 6, Fit score:0.951805
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.906835
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 6, Fit score:0.889411
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 6, Fit score:0.799262
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 6, Fit score:0.935205
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2
+Staring cycle 8/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8bc2a5190>
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 116.21118650278133
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8bc234dd0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 169.79066249780513
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff905fed690>
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 198.00244759497977
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8bc16cd90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 185.1129812155386
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8bc194750>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 136.28971056345654
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff905fed690>
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 101.53414807012216
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8bc12e2d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.71421231288274
+
+Force: amide-ester, State: bulk_EOS, Iteration: 7, Fit score:0.915654
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.869714
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.879450
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 7, Fit score:0.543240
+
+Force: amide-ester, State: EOS_LPP, Iteration: 7, Fit score:0.898164
+
+Force: ester-ester, State: bulk_EOS, Iteration: 7, Fit score:0.873075
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.789983
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.861140
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 7, Fit score:0.871306
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 7, Fit score:0.905108
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 7, Fit score:0.733485
+
+Force: ester-ester, State: EOS_LPP, Iteration: 7, Fit score:0.879100
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 7, Fit score:0.898845
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.871424
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.871039
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 7, Fit score:0.660546
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 7, Fit score:0.883317
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 7, Fit score:0.891271
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.883102
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.860694
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 7, Fit score:0.508692
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 7, Fit score:0.850242
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 7, Fit score:0.920881
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.883917
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.878573
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 7, Fit score:0.682582
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 7, Fit score:0.925751
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 7, Fit score:0.869375
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.774292
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.856826
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 7, Fit score:0.897638
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 7, Fit score:0.930517
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 7, Fit score:0.749521
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 7, Fit score:0.904547
+
+Force: ester-tail, State: bulk_EOS, Iteration: 7, Fit score:0.876191
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.923609
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.870558
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 7, Fit score:0.928082
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 7, Fit score:0.941776
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 7, Fit score:0.926623
+
+Force: ester-tail, State: EOS_LPP, Iteration: 7, Fit score:0.914383
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 7, Fit score:0.865621
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.796101
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.851274
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 7, Fit score:0.890714
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 7, Fit score:0.871550
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 7, Fit score:0.729593
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 7, Fit score:0.879623
+
+Force: ester-taild, State: bulk_EOS, Iteration: 7, Fit score:0.857710
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.883740
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.851607
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 7, Fit score:0.936013
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 7, Fit score:0.833023
+
+Force: ester-taild, State: EOS_LPP, Iteration: 7, Fit score:0.880199
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 7, Fit score:0.884988
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 7, Fit score:0.938533
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.880394
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 7, Fit score:0.859602
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 7, Fit score:0.755370
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 7, Fit score:0.907940
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2
+Staring cycle 9/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8b430d1d0>
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 116.09670375571956
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8bc16cd90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 169.21599952985568
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8fd757690>
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 199.10630612835766
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fbb652d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 185.08392265209537
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fd731610>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 135.99751443217966
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8fba49450>
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 101.69866832120854
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8fbab6c90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.687606020953986
+
+Force: amide-ester, State: bulk_EOS, Iteration: 8, Fit score:0.933118
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.907832
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.924554
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 8, Fit score:0.498476
+
+Force: amide-ester, State: EOS_LPP, Iteration: 8, Fit score:0.919754
+
+Force: ester-ester, State: bulk_EOS, Iteration: 8, Fit score:0.870459
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.775698
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.836968
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 8, Fit score:0.874031
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 8, Fit score:0.886244
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 8, Fit score:0.754366
+
+Force: ester-ester, State: EOS_LPP, Iteration: 8, Fit score:0.921394
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 8, Fit score:0.931014
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.913734
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.925386
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 8, Fit score:0.653945
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 8, Fit score:0.917133
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 8, Fit score:0.929755
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.922117
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.922547
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 8, Fit score:0.406203
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 8, Fit score:0.879909
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 8, Fit score:0.947302
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.925685
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.924003
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 8, Fit score:0.727407
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 8, Fit score:0.911353
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 8, Fit score:0.868445
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.761666
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.827644
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 8, Fit score:0.902063
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 8, Fit score:0.915193
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 8, Fit score:0.773021
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 8, Fit score:0.936081
+
+Force: ester-tail, State: bulk_EOS, Iteration: 8, Fit score:0.875406
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.932071
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.877211
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 8, Fit score:0.928018
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 8, Fit score:0.938328
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 8, Fit score:0.927063
+
+Force: ester-tail, State: EOS_LPP, Iteration: 8, Fit score:0.917763
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 8, Fit score:0.860919
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.774035
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.836596
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 8, Fit score:0.873744
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 8, Fit score:0.862964
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 8, Fit score:0.747902
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 8, Fit score:0.920594
+
+Force: ester-taild, State: bulk_EOS, Iteration: 8, Fit score:0.862275
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.889807
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.838597
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 8, Fit score:0.929047
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 8, Fit score:0.849476
+
+Force: ester-taild, State: EOS_LPP, Iteration: 8, Fit score:0.876307
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 8, Fit score:0.904198
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 8, Fit score:0.947752
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.892859
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 8, Fit score:0.880260
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 8, Fit score:0.731859
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 8, Fit score:0.935884
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2
+Staring cycle 10/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8b42f85d0>
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS; kT: 9.9; Alpha0: 0.14, TSP = 116.113547650503
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8bc245b50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_CHOL; kT: 9.9; Alpha0: 0.14, TSP = 170.6283149398154
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7ff8b4349490>
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 198.7134274104419
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff9017205d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_1_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 185.02386144132
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8bc183bd0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: EOS_CHOL_1_2_bilayer; kT: 6.06; Alpha0: 0.42, TSP = 134.38366276439396
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42
+Running on device <hoomd.device.CPU object at 0x7ff8b4349490>
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: EOS_pure_extended; kT: 6.06; Alpha0: 0.42, TSP = 101.63495699643651
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7ff8b4360d10>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.714233953605536
+
+Force: amide-ester, State: bulk_EOS, Iteration: 9, Fit score:0.887379
+
+Force: amide-ester, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.906160
+
+Force: amide-ester, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.876514
+
+Force: amide-ester, State: EOS_pure_extended, Iteration: 9, Fit score:0.542851
+
+Force: amide-ester, State: EOS_LPP, Iteration: 9, Fit score:0.871669
+
+Force: ester-ester, State: bulk_EOS, Iteration: 9, Fit score:0.852486
+
+Force: ester-ester, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.780713
+
+Force: ester-ester, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.832190
+
+Force: ester-ester, State: EOS_CHOL_1_1_bilayer, Iteration: 9, Fit score:0.873486
+
+Force: ester-ester, State: EOS_CHOL_1_2_bilayer, Iteration: 9, Fit score:0.896983
+
+Force: ester-ester, State: EOS_pure_extended, Iteration: 9, Fit score:0.738331
+
+Force: ester-ester, State: EOS_LPP, Iteration: 9, Fit score:0.878535
+
+Force: ester-mhead2, State: bulk_EOS, Iteration: 9, Fit score:0.867106
+
+Force: ester-mhead2, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.915431
+
+Force: ester-mhead2, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.861330
+
+Force: ester-mhead2, State: EOS_pure_extended, Iteration: 9, Fit score:0.670296
+
+Force: ester-mhead2, State: EOS_LPP, Iteration: 9, Fit score:0.870941
+
+Force: ester-oh1, State: bulk_EOS, Iteration: 9, Fit score:0.861475
+
+Force: ester-oh1, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.915158
+
+Force: ester-oh1, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.860494
+
+Force: ester-oh1, State: EOS_pure_extended, Iteration: 9, Fit score:0.437311
+
+Force: ester-oh1, State: EOS_LPP, Iteration: 9, Fit score:0.814360
+
+Force: ester-oh2, State: bulk_EOS, Iteration: 9, Fit score:0.891525
+
+Force: ester-oh2, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.922327
+
+Force: ester-oh2, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.865931
+
+Force: ester-oh2, State: EOS_pure_extended, Iteration: 9, Fit score:0.694997
+
+Force: ester-oh2, State: EOS_LPP, Iteration: 9, Fit score:0.868290
+
+Force: ester-sticky, State: bulk_EOS, Iteration: 9, Fit score:0.851075
+
+Force: ester-sticky, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.757981
+
+Force: ester-sticky, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.829207
+
+Force: ester-sticky, State: EOS_CHOL_1_1_bilayer, Iteration: 9, Fit score:0.909808
+
+Force: ester-sticky, State: EOS_CHOL_1_2_bilayer, Iteration: 9, Fit score:0.923633
+
+Force: ester-sticky, State: EOS_pure_extended, Iteration: 9, Fit score:0.755389
+
+Force: ester-sticky, State: EOS_LPP, Iteration: 9, Fit score:0.910232
+
+Force: ester-tail, State: bulk_EOS, Iteration: 9, Fit score:0.871486
+
+Force: ester-tail, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.924367
+
+Force: ester-tail, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.873675
+
+Force: ester-tail, State: EOS_CHOL_1_1_bilayer, Iteration: 9, Fit score:0.928120
+
+Force: ester-tail, State: EOS_CHOL_1_2_bilayer, Iteration: 9, Fit score:0.945128
+
+Force: ester-tail, State: EOS_pure_extended, Iteration: 9, Fit score:0.925018
+
+Force: ester-tail, State: EOS_LPP, Iteration: 9, Fit score:0.914653
+
+Force: ester-tail2, State: bulk_EOS, Iteration: 9, Fit score:0.842038
+
+Force: ester-tail2, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.785629
+
+Force: ester-tail2, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.824178
+
+Force: ester-tail2, State: EOS_CHOL_1_1_bilayer, Iteration: 9, Fit score:0.889718
+
+Force: ester-tail2, State: EOS_CHOL_1_2_bilayer, Iteration: 9, Fit score:0.859455
+
+Force: ester-tail2, State: EOS_pure_extended, Iteration: 9, Fit score:0.733664
+
+Force: ester-tail2, State: EOS_LPP, Iteration: 9, Fit score:0.891042
+
+Force: ester-taild, State: bulk_EOS, Iteration: 9, Fit score:0.858876
+
+Force: ester-taild, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.882764
+
+Force: ester-taild, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.836905
+
+Force: ester-taild, State: EOS_CHOL_1_1_bilayer, Iteration: 9, Fit score:0.928936
+
+Force: ester-taild, State: EOS_CHOL_1_2_bilayer, Iteration: 9, Fit score:0.802721
+
+Force: ester-taild, State: EOS_LPP, Iteration: 9, Fit score:0.891812
+
+Force: ester-ter2, State: bulk_EOS, Iteration: 9, Fit score:0.903937
+
+Force: ester-ter2, State: bulk_EOS_CHOL, Iteration: 9, Fit score:0.934961
+
+Force: ester-ter2, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.899050
+
+Force: ester-ter2, State: EOS_CHOL_1_1_bilayer, Iteration: 9, Fit score:0.917280
+
+Force: ester-ter2, State: EOS_CHOL_1_2_bilayer, Iteration: 9, Fit score:0.794105
+
+Force: ester-ter2, State: EOS_LPP, Iteration: 9, Fit score:0.918550
+
+smoothing potential: amide-ester
+smoothing potential: ester-ester
+smoothing potential: ester-mhead2
+smoothing potential: ester-oh1
+smoothing potential: ester-oh2
+smoothing potential: ester-sticky
+smoothing potential: ester-tail
+smoothing potential: ester-tail2
+smoothing potential: ester-taild
+smoothing potential: ester-ter2

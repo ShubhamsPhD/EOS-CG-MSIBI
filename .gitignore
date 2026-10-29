@@ -1,0 +1,6 @@
+
+# Large simulation trajectory files
+*.gsd
+*.xtc
+*.trr
+*.h5

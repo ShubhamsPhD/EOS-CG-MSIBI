@@ -1,0 +1,2086 @@
+[38;5;127mapps[0m/[38;5;172manaconda3[0m/[38;5;67m2023.03[0m/[38;5;68mbin[0m
+ |
+ [0;32mOK[0m
+
+================================================================================
+RUNNING FFA STAGE 1
+================================================================================
+
+Loaded bond types: ['amide-mhead2', 'amide-tail', 'chead-ring1', 'chead-ring2', 'chme-ring2', 'chme-ring3', 'ctail-cterm', 'ctail-ring4', 'ester-sticky', 'ester-tail', 'ester-tail2', 'head-tail', 'mhead2-oh1', 'mhead2-oh2', 'mhead2-tail', 'ring1-ring2', 'ring1-ring3', 'ring1-ring4', 'ring2-ring3', 'ring3-ring4', 'tail-tail', 'tail-tail2', 'tail-taild', 'tail-ter2', 'taild-taild']
+Loaded angle types: ['amide-mhead2-oh1', 'amide-mhead2-oh2', 'amide-mhead2-tail', 'amide-tail-tail', 'chead-ring1-ring2', 'chead-ring1-ring3', 'chead-ring1-ring4', 'chead-ring2-chme', 'chead-ring2-ring1', 'chead-ring2-ring3', 'chme-ring2-ring1', 'chme-ring2-ring3', 'chme-ring3-ring1', 'chme-ring3-ring2', 'chme-ring3-ring4', 'ctail-ring4-ring1', 'ctail-ring4-ring3', 'cterm-ctail-ring4', 'ester-tail-tail', 'ester-tail2-tail', 'head-tail-tail', 'mhead2-amide-tail', 'mhead2-tail-tail', 'oh1-mhead2-oh2', 'oh1-mhead2-tail', 'oh2-mhead2-tail', 'ring1-chead-ring2', 'ring1-ring2-ring3', 'ring1-ring3-ring2', 'ring1-ring3-ring4', 'ring1-ring4-ring3', 'ring2-ring1-ring3', 'ring2-ring1-ring4', 'ring2-ring3-ring4', 'ring3-ring1-ring4', 'sticky-ester-tail', 'sticky-ester-tail2', 'tail-ester-tail2', 'tail-tail-tail', 'tail-tail-tail2', 'tail-tail-taild', 'tail-tail-ter2', 'tail-taild-taild', 'taild-tail-ter2']
+Loaded FIXED fallback init pair ring1-step8.pot.oh3 from ring1-step8.pot.oh3.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh2 from ring1-step8.pot.oh2.txt
+Loaded FIXED fallback init pair oh2-ctail from oh2-ctail.txt
+Loaded FIXED fallback init pair ter2-amide from ter2-amide.txt
+Loaded FIXED fallback init pair ter2-mhead2 from ter2-mhead2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.ter2 from ring1-step8.pot.ter2.txt
+Loaded FIXED fallback init pair amide-oh5 from amide-oh5.txt
+Loaded FIXED fallback init pair ter2-oh5 from ter2-oh5.txt
+Loaded FIXED fallback init pair stick1-stick2 from stick1-stick2.txt
+Loaded FIXED fallback init pair oh5-chme from oh5-chme.txt
+Loaded FIXED fallback init pair tail-mhead2 from tail-mhead2.txt
+Loaded FIXED fallback init pair ctail-ring3 from ctail-ring3.txt
+Loaded FIXED fallback init pair oh4-ring4 from oh4-ring4.txt
+Loaded FIXED fallback init pair oh4-oh3 from oh4-oh3.txt
+Loaded FIXED fallback init pair ring-ctail from ring-ctail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.ter2 from ring4-step8.pot.ter2.txt
+Loaded FIXED fallback init pair ring4-ring4 from ring4-ring4.txt
+Loaded FIXED fallback init pair oh5-oh5 from oh5-oh5.txt
+Loaded FIXED fallback init pair ter2-ring from ter2-ring.txt
+Loaded FIXED fallback init pair oh4-ring1 from oh4-ring1.txt
+Loaded FIXED fallback init pair ring2-ring3 from ring2-ring3.txt
+Loaded FIXED fallback init pair amide-amide from amide-amide.txt
+Loaded FIXED fallback init pair ring1-step8.pot.tail from ring1-step8.pot.tail.txt
+Loaded FIXED fallback init pair ter2-ctail from ter2-ctail.txt
+Loaded FIXED fallback init pair oh1-ring2 from oh1-ring2.txt
+Loaded FIXED fallback init pair tail-chme from tail-chme.txt
+Loaded FIXED fallback init pair tail-ctail from tail-ctail.txt
+Loaded FIXED fallback init pair stick2-stick2 from stick2-stick2.txt
+Loaded FIXED fallback init pair ter2-oh2 from ter2-oh2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.amide from ring2-step8.pot.amide.txt
+Loaded FIXED fallback init pair mhead2-ring from mhead2-ring.txt
+Loaded FIXED fallback init pair oh4-ring3 from oh4-ring3.txt
+Loaded FIXED fallback init pair chead-ring2 from chead-ring2.txt
+Loaded FIXED fallback init pair oh5-oh4 from oh5-oh4.txt
+Loaded FIXED fallback init pair ring3-step8.pot.mhead2 from ring3-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair chead-cterm from chead-cterm.txt
+Loaded FIXED fallback init pair oh3-stick2 from oh3-stick2.txt
+Loaded FIXED fallback init pair ring1-ring2 from ring1-ring2.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh2 from ring3-step8.pot.oh2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh5 from ring1-step8.pot.oh5.txt
+Loaded FIXED fallback init pair amide-chead from amide-chead.txt
+Loaded FIXED fallback init pair chead-chead from chead-chead.txt
+Loaded FIXED fallback init pair chead-water from chead-water.txt
+Loaded FIXED fallback init pair stick1-water from stick1-water.txt
+Loaded FIXED fallback init pair oh5-ring1 from oh5-ring1.txt
+Loaded FIXED fallback init pair ring4-ter2 from ring4-ter2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh4 from ring2-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh4-ring2 from oh4-ring2.txt
+Loaded FIXED fallback init pair oh4-head from oh4-head.txt
+Loaded FIXED fallback init pair tail-cterm from tail-cterm.txt
+Loaded FIXED fallback init pair ring2-step8.pot.ter2 from ring2-step8.pot.ter2.txt
+Loaded FIXED fallback init pair tail-stick1 from tail-stick1.txt
+Loaded FIXED fallback init pair mhead2-oh1 from mhead2-oh1.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh2 from ring4-step8.pot.oh2.txt
+Loaded FIXED fallback init pair tail-head from tail-head.txt
+Loaded FIXED fallback init pair ter2-water from ter2-water.txt
+Loaded FIXED fallback init pair ring1-ring1 from ring1-ring1.txt
+Loaded FIXED fallback init pair tail-ring from tail-ring.txt
+Loaded FIXED fallback init pair oh3-water from oh3-water.txt
+Loaded FIXED fallback init pair stick2-water from stick2-water.txt
+Loaded FIXED fallback init pair tail-water from tail-water.txt
+Loaded FIXED fallback init pair mhead2-chme from mhead2-chme.txt
+Loaded FIXED fallback init pair ter2-tail from ter2-tail.txt
+Loaded FIXED fallback init pair mhead2-ring1 from mhead2-ring1.txt
+Loaded FIXED fallback init pair head-chme from head-chme.txt
+Loaded FIXED fallback init pair ring2-ring4 from ring2-ring4.txt
+Loaded FIXED fallback init pair ring-chme from ring-chme.txt
+Loaded FIXED fallback init pair ring3-tail from ring3-tail.txt
+Loaded FIXED fallback init pair ter2-cterm from ter2-cterm.txt
+Loaded FIXED fallback init pair ring2-tail from ring2-tail.txt
+Loaded FIXED fallback init pair amide-ring3 from amide-ring3.txt
+Loaded FIXED fallback init pair oh1-oh2 from oh1-oh2.txt
+Loaded FIXED fallback init pair head-ring1 from head-ring1.txt
+Loaded FIXED fallback init pair oh1-ring3 from oh1-ring3.txt
+Loaded FIXED fallback init pair cterm-ring3 from cterm-ring3.txt
+Loaded FIXED fallback init pair amide-oh4 from amide-oh4.txt
+Loaded FIXED fallback init pair ring4-water from ring4-water.txt
+Loaded FIXED fallback init pair amide-water from amide-water.txt
+Loaded FIXED fallback init pair oh4-chead from oh4-chead.txt
+Loaded FIXED fallback init pair oh4-ctail from oh4-ctail.txt
+Loaded FIXED fallback init pair oh2-ring4 from oh2-ring4.txt
+Loaded FIXED fallback init pair oh1-cterm from oh1-cterm.txt
+Loaded FIXED fallback init pair mhead2-chead from mhead2-chead.txt
+Loaded FIXED fallback init pair ring1-water from ring1-water.txt
+Loaded FIXED fallback init pair chead-ctail from chead-ctail.txt
+Loaded FIXED fallback init pair ctail-ctail from ctail-ctail.txt
+Loaded FIXED fallback init pair ring1-tail from ring1-tail.txt
+Loaded FIXED fallback init pair amide-ring4 from amide-ring4.txt
+Loaded FIXED fallback init pair oh5-ring from oh5-ring.txt
+Loaded FIXED fallback init pair ring3-step8.pot.tail from ring3-step8.pot.tail.txt
+Loaded FIXED fallback init pair oh4-oh2 from oh4-oh2.txt
+Loaded FIXED fallback init pair oh2-water from oh2-water.txt
+Loaded FIXED fallback init pair head-ctail from head-ctail.txt
+Loaded FIXED fallback init pair ring2-water from ring2-water.txt
+Loaded FIXED fallback init pair oh4-cterm from oh4-cterm.txt
+Loaded FIXED fallback init pair oh2-chead from oh2-chead.txt
+Loaded FIXED fallback init pair amide-head from amide-head.txt
+Loaded FIXED fallback init pair ring3-step8.pot.head from ring3-step8.pot.head.txt
+Loaded FIXED fallback init pair oh5-oh2 from oh5-oh2.txt
+Loaded FIXED fallback init pair amide-chme from amide-chme.txt
+Loaded FIXED fallback init pair amide-mhead2 from amide-mhead2.txt
+Loaded FIXED fallback init pair ctail-water from ctail-water.txt
+Loaded FIXED fallback init pair tail-oh2 from tail-oh2.txt
+Loaded FIXED fallback init pair chme-water from chme-water.txt
+Loaded FIXED fallback init pair ter2-oh4 from ter2-oh4.txt
+Loaded FIXED fallback init pair cterm-ring4 from cterm-ring4.txt
+Loaded FIXED fallback init pair amide-stick2 from amide-stick2.txt
+Loaded FIXED fallback init pair ter2-chead from ter2-chead.txt
+Loaded FIXED fallback init pair ring1-ring3 from ring1-ring3.txt
+Loaded FIXED fallback init pair head-ring2 from head-ring2.txt
+Loaded FIXED fallback init pair oh1-chme from oh1-chme.txt
+Loaded FIXED fallback init pair ring1-ter2 from ring1-ter2.txt
+Loaded FIXED fallback init pair oh3-ring from oh3-ring.txt
+Loaded FIXED fallback init pair ring1-step8.pot.head from ring1-step8.pot.head.txt
+Loaded FIXED fallback init pair ter2-oh3 from ter2-oh3.txt
+Loaded FIXED fallback init pair ring3-water from ring3-water.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh5 from ring3-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh1-water from oh1-water.txt
+Loaded FIXED fallback init pair oh3-ring1 from oh3-ring1.txt
+Loaded FIXED fallback init pair amide-oh2 from amide-oh2.txt
+Loaded FIXED fallback init pair oh5-ring4 from oh5-ring4.txt
+Loaded FIXED fallback init pair ter2-ter2 from ter2-ter2.txt
+Loaded FIXED fallback init pair head-ring4 from head-ring4.txt
+Loaded FIXED fallback init pair oh3-oh3 from oh3-oh3.txt
+Loaded FIXED fallback init pair oh3-cterm from oh3-cterm.txt
+Loaded FIXED fallback init pair ring-ring from ring-ring.txt
+Loaded FIXED fallback init pair oh2-oh2 from oh2-oh2.txt
+Loaded FIXED fallback init pair tail-chead from tail-chead.txt
+Loaded FIXED fallback init pair oh3-oh4 from oh3-oh4.txt
+Loaded FIXED fallback init pair oh4-water from oh4-water.txt
+Loaded FIXED fallback init pair stick1-oh4 from stick1-oh4.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh3 from ring4-step8.pot.oh3.txt
+Loaded FIXED fallback init pair ctail-ring2 from ctail-ring2.txt
+Loaded FIXED fallback init pair chead-ring1 from chead-ring1.txt
+Loaded FIXED fallback init pair oh3-ring2 from oh3-ring2.txt
+Loaded FIXED fallback init pair tail-oh3 from tail-oh3.txt
+Loaded FIXED fallback init pair mhead2-ctail from mhead2-ctail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh5 from ring4-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh1-ctail from oh1-ctail.txt
+Loaded FIXED fallback init pair ctail-ring4 from ctail-ring4.txt
+Loaded FIXED fallback init pair chme-ring4 from chme-ring4.txt
+Loaded FIXED fallback init pair ring1-step8.pot.mhead2 from ring1-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair ring-cterm from ring-cterm.txt
+Loaded FIXED fallback init pair oh5-ctail from oh5-ctail.txt
+Loaded FIXED fallback init pair oh2-head from oh2-head.txt
+Loaded FIXED fallback init pair oh4-oh4 from oh4-oh4.txt
+Loaded FIXED fallback init pair amide-ring from amide-ring.txt
+Loaded FIXED fallback init pair tail-oh1 from tail-oh1.txt
+Loaded FIXED fallback init pair oh1-oh4 from oh1-oh4.txt
+Loaded FIXED fallback init pair mhead2-oh2 from mhead2-oh2.txt
+Loaded FIXED fallback init pair oh1-stick2 from oh1-stick2.txt
+Loaded FIXED fallback init pair oh3-chme from oh3-chme.txt
+Loaded FIXED fallback init pair ring4-step8.pot.head from ring4-step8.pot.head.txt
+Loaded FIXED fallback init pair mhead2-ring3 from mhead2-ring3.txt
+Loaded FIXED fallback init pair oh2-oh4 from oh2-oh4.txt
+Loaded FIXED fallback init pair water-water from water-water.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh4 from ring1-step8.pot.oh4.txt
+Loaded FIXED fallback init pair stick1-stick1 from stick1-stick1.txt
+Loaded FIXED fallback init pair mhead2-cterm from mhead2-cterm.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh1 from ring4-step8.pot.oh1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.mhead2 from ring2-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair tail-amide from tail-amide.txt
+Loaded FIXED fallback init pair amide-ctail from amide-ctail.txt
+Loaded FIXED fallback init pair oh1-chead from oh1-chead.txt
+Loaded FIXED fallback init pair oh4-stick2 from oh4-stick2.txt
+Loaded FIXED fallback init pair ter2-head from ter2-head.txt
+Loaded FIXED fallback init pair ring4-step8.pot.tail from ring4-step8.pot.tail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh4 from ring4-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh5-ring3 from oh5-ring3.txt
+Loaded FIXED fallback init pair oh2-ring1 from oh2-ring1.txt
+Loaded FIXED fallback init pair tail-oh4 from tail-oh4.txt
+Loaded FIXED fallback init pair oh2-cterm from oh2-cterm.txt
+Loaded FIXED fallback init pair tail-tail from tail-tail.txt
+Loaded FIXED fallback init pair head-chead from head-chead.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh1 from ring2-step8.pot.oh1.txt
+Loaded FIXED fallback init pair tail-stick2 from tail-stick2.txt
+Loaded FIXED fallback init pair amide-cterm from amide-cterm.txt
+Loaded FIXED fallback init pair oh5-head from oh5-head.txt
+Loaded FIXED fallback init pair cterm-cterm from cterm-cterm.txt
+Loaded FIXED fallback init pair chead-chme from chead-chme.txt
+Loaded FIXED fallback init pair mhead2-oh3 from mhead2-oh3.txt
+Loaded FIXED fallback init pair head-ring from head-ring.txt
+Loaded FIXED fallback init pair amide-ring2 from amide-ring2.txt
+Loaded FIXED fallback init pair ring4-step8.pot.mhead2 from ring4-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair oh3-oh2 from oh3-oh2.txt
+Loaded FIXED fallback init pair oh4-chme from oh4-chme.txt
+Loaded FIXED fallback init pair oh2-ring2 from oh2-ring2.txt
+Loaded FIXED fallback init pair ring2-ter2 from ring2-ter2.txt
+Loaded FIXED fallback init pair head-water from head-water.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh3 from ring2-step8.pot.oh3.txt
+Loaded FIXED fallback init pair head-ring3 from head-ring3.txt
+Loaded FIXED fallback init pair ring3-step8.pot.ter2 from ring3-step8.pot.ter2.txt
+Loaded FIXED fallback init pair oh5-cterm from oh5-cterm.txt
+Loaded FIXED fallback init pair ctail-chme from ctail-chme.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh1 from ring3-step8.pot.oh1.txt
+Loaded FIXED fallback init pair amide-oh3 from amide-oh3.txt
+Loaded FIXED fallback init pair amide-stick1 from amide-stick1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.head from ring2-step8.pot.head.txt
+Loaded FIXED fallback init pair oh1-head from oh1-head.txt
+Loaded FIXED fallback init pair chme-ring3 from chme-ring3.txt
+Loaded FIXED fallback init pair cterm-ring2 from cterm-ring2.txt
+Loaded FIXED fallback init pair ring2-ring2 from ring2-ring2.txt
+Loaded FIXED fallback init pair oh5-ring2 from oh5-ring2.txt
+Loaded FIXED fallback init pair ctail-cterm from ctail-cterm.txt
+Loaded FIXED fallback init pair oh1-ring1 from oh1-ring1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh5 from ring2-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh2-ring3 from oh2-ring3.txt
+Loaded FIXED fallback init pair mhead2-head from mhead2-head.txt
+Loaded FIXED fallback init pair oh5-stick2 from oh5-stick2.txt
+Loaded FIXED fallback init pair oh3-ring3 from oh3-ring3.txt
+Loaded FIXED fallback init pair oh1-oh3 from oh1-oh3.txt
+Loaded FIXED fallback init pair mhead2-oh4 from mhead2-oh4.txt
+Loaded FIXED fallback init pair mhead2-mhead2 from mhead2-mhead2.txt
+Loaded FIXED fallback init pair chead-ring from chead-ring.txt
+Loaded FIXED fallback init pair chme-chme from chme-chme.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh4 from ring3-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh5-water from oh5-water.txt
+Loaded FIXED fallback init pair chead-ring4 from chead-ring4.txt
+Loaded FIXED fallback init pair oh2-chme from oh2-chme.txt
+Loaded FIXED fallback init pair oh3-chead from oh3-chead.txt
+Loaded FIXED fallback init pair ring3-step8.pot.amide from ring3-step8.pot.amide.txt
+Loaded FIXED fallback init pair ter2-oh1 from ter2-oh1.txt
+Loaded FIXED fallback init pair stick1-oh2 from stick1-oh2.txt
+Loaded FIXED fallback init pair tail-oh5 from tail-oh5.txt
+Loaded FIXED fallback init pair cterm-ring1 from cterm-ring1.txt
+Loaded FIXED fallback init pair mhead2-stick1 from mhead2-stick1.txt
+Loaded FIXED fallback init pair oh1-ring from oh1-ring.txt
+Loaded FIXED fallback init pair cterm-chme from cterm-chme.txt
+Loaded FIXED fallback init pair ring-water from ring-water.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh2 from ring2-step8.pot.oh2.txt
+Loaded FIXED fallback init pair oh3-head from oh3-head.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh1 from ring1-step8.pot.oh1.txt
+Loaded FIXED fallback init pair oh5-oh1 from oh5-oh1.txt
+Loaded FIXED fallback init pair ring3-ter2 from ring3-ter2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.amide from ring1-step8.pot.amide.txt
+Loaded FIXED fallback init pair oh4-ring from oh4-ring.txt
+Loaded FIXED fallback init pair head-cterm from head-cterm.txt
+Loaded FIXED fallback init pair ring3-ring3 from ring3-ring3.txt
+Loaded FIXED fallback init pair ctail-ring1 from ctail-ring1.txt
+Loaded FIXED fallback init pair oh1-oh1 from oh1-oh1.txt
+Loaded FIXED fallback init pair ring1-ring4 from ring1-ring4.txt
+Loaded FIXED fallback init pair chme-ring2 from chme-ring2.txt
+Loaded FIXED fallback init pair amide-oh1 from amide-oh1.txt
+Loaded FIXED fallback init pair amide-ring1 from amide-ring1.txt
+Loaded FIXED fallback init pair cterm-water from cterm-water.txt
+Loaded FIXED fallback init pair oh5-chead from oh5-chead.txt
+Loaded FIXED fallback init pair oh2-ring from oh2-ring.txt
+Loaded FIXED fallback init pair mhead2-oh5 from mhead2-oh5.txt
+Loaded FIXED fallback init pair oh3-ring4 from oh3-ring4.txt
+Loaded FIXED fallback init pair oh1-ring4 from oh1-ring4.txt
+Loaded FIXED fallback init pair ring4-tail from ring4-tail.txt
+Loaded FIXED fallback init pair ring3-ring4 from ring3-ring4.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh3 from ring3-step8.pot.oh3.txt
+Loaded FIXED fallback init pair chead-ring3 from chead-ring3.txt
+Loaded FIXED fallback init pair mhead2-stick2 from mhead2-stick2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.tail from ring2-step8.pot.tail.txt
+Loaded FIXED fallback init pair mhead2-water from mhead2-water.txt
+Loaded FIXED fallback init pair oh3-ctail from oh3-ctail.txt
+Loaded FIXED fallback init pair oh5-oh3 from oh5-oh3.txt
+Loaded FIXED fallback init pair mhead2-ring2 from mhead2-ring2.txt
+Loaded FIXED fallback init pair ring4-step8.pot.amide from ring4-step8.pot.amide.txt
+Loaded FIXED fallback init pair chme-ring1 from chme-ring1.txt
+Loaded FIXED fallback init pair mhead2-ring4 from mhead2-ring4.txt
+Loaded FIXED fallback init pair ter2-chme from ter2-chme.txt
+Loaded FIXED fallback init pair head-head from head-head.txt
+Loaded FIXED fallback init pair sticky-water from sticky-water.txt
+Loaded FIXED fallback init pair ester-water from ester-water.txt
+Loaded FIXED fallback init pair taild-water from taild-water.txt
+Loaded FIXED fallback init pair tail2-water from tail2-water.txt
+Added fixed potentials: PAIR_DIR=265 tables, EXTRA_DIR=4 tables
+Loaded GLOBAL PRETRAINED pair ester-sticky
+Loaded GLOBAL PRETRAINED pair amide-sticky
+Loaded GLOBAL PRETRAINED pair tail-tail2
+Loaded GLOBAL PRETRAINED pair ester-taild
+Loaded GLOBAL PRETRAINED pair sticky-tail
+Loaded GLOBAL PRETRAINED pair mhead2-sticky
+Loaded GLOBAL PRETRAINED pair sticky-sticky
+Loaded GLOBAL PRETRAINED pair ester-ter2
+Loaded GLOBAL PRETRAINED pair tail-taild
+Loaded GLOBAL PRETRAINED pair amide-ester
+Loaded GLOBAL PRETRAINED pair taild-taild
+Loaded GLOBAL PRETRAINED pair oh1-taild
+Loaded GLOBAL PRETRAINED pair sticky-tail2
+Loaded GLOBAL PRETRAINED pair ester-ester
+Loaded GLOBAL PRETRAINED pair ester-tail
+Loaded GLOBAL PRETRAINED pair oh2-sticky
+Loaded GLOBAL PRETRAINED pair amide-tail2
+Loaded GLOBAL PRETRAINED pair tail2-tail2
+Loaded GLOBAL PRETRAINED pair oh1-tail2
+Loaded GLOBAL PRETRAINED pair oh1-sticky
+Loaded GLOBAL PRETRAINED pair tail2-ter2
+Loaded GLOBAL PRETRAINED pair mhead2-taild
+Loaded GLOBAL PRETRAINED pair ester-mhead2
+Loaded GLOBAL PRETRAINED pair taild-ter2
+Loaded GLOBAL PRETRAINED pair mhead2-tail2
+Loaded GLOBAL PRETRAINED pair ester-oh1
+Loaded GLOBAL PRETRAINED pair oh2-tail2
+Loaded GLOBAL PRETRAINED pair tail2-taild
+Loaded GLOBAL PRETRAINED pair sticky-taild
+Loaded GLOBAL PRETRAINED pair ester-oh2
+Loaded GLOBAL PRETRAINED pair oh2-taild
+Loaded GLOBAL PRETRAINED pair ester-tail2
+Loaded GLOBAL PRETRAINED pair sticky-ter2
+Loaded GLOBAL PRETRAINED pair amide-taild
+Loaded GLOBAL INIT fallback pair chead-ester from ester-chead.txt
+Loaded GLOBAL INIT fallback pair chead-sticky from sticky-chead.txt
+Loaded GLOBAL INIT fallback pair chead-tail2 from tail2-chead.txt
+Loaded GLOBAL INIT fallback pair chead-taild from taild-chead.txt
+Loaded GLOBAL INIT fallback pair chme-ester from ester-chme.txt
+Loaded GLOBAL INIT fallback pair chme-sticky from sticky-chme.txt
+Loaded GLOBAL INIT fallback pair chme-tail2 from tail2-chme.txt
+Loaded GLOBAL INIT fallback pair chme-taild from taild-chme.txt
+Loaded GLOBAL INIT fallback pair ctail-ester from ester-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-sticky from sticky-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-tail2 from tail2-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-taild from taild-ctail.txt
+Loaded GLOBAL INIT fallback pair cterm-ester from ester-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-sticky from sticky-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-tail2 from tail2-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-taild from taild-cterm.txt
+Loaded GLOBAL INIT fallback pair ester-ring1 from ester-ring1.txt
+Loaded GLOBAL INIT fallback pair ester-ring2 from ester-ring2.txt
+Loaded GLOBAL INIT fallback pair ester-ring3 from ester-ring3.txt
+Loaded GLOBAL INIT fallback pair ester-ring4 from ester-ring4.txt
+Loaded GLOBAL INIT fallback pair ring1-sticky from ring1-sticky.txt
+Loaded GLOBAL INIT fallback pair ring1-tail2 from ring1-tail2.txt
+Loaded GLOBAL INIT fallback pair ring1-taild from ring1-taild.txt
+Loaded GLOBAL INIT fallback pair ring2-sticky from ring2-sticky.txt
+Loaded GLOBAL INIT fallback pair ring2-tail2 from ring2-tail2.txt
+Loaded GLOBAL INIT fallback pair ring2-taild from ring2-taild.txt
+Loaded GLOBAL INIT fallback pair ring3-sticky from ring3-sticky.txt
+Loaded GLOBAL INIT fallback pair ring3-tail2 from ring3-tail2.txt
+Loaded GLOBAL INIT fallback pair ring3-taild from ring3-taild.txt
+Loaded GLOBAL INIT fallback pair ring4-sticky from ring4-sticky.txt
+Loaded GLOBAL INIT fallback pair ring4-tail2 from ring4-tail2.txt
+Loaded GLOBAL INIT fallback pair ring4-taild from ring4-taild.txt
+Types in all states: ['amide', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2'] Number of types: 11
+Global safe r_cut: 5.431623
+Types in ANY state: ['amide', 'chead', 'chme', 'ctail', 'cterm', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'ring1', 'ring2', 'ring3', 'ring4', 'sticky', 'tail', 'tail2', 'taild', 'ter2', 'water']
+Types in ALL states: ['amide', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2']
+[FIXED] ester-head
+source: init_dir -> ester-head.txt
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: []
+Added FIXED ester-head (later stage; source=init_dir, file=ester-head.txt)
+[OPTIMIZE] head-sticky
+source: init_dir -> sticky-head.txt
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: []
+Added OPTIMIZE head-sticky (source=init_dir, file=sticky-head.txt)
+[FIXED] head-tail2
+source: init_dir -> tail2-head.txt
+used states: ['EOS_LPP']
+ignored states: ['bulk_EOS_FFA']
+Added FIXED head-tail2 (later stage; source=init_dir, file=tail2-head.txt)
+[FIXED] head-taild
+source: init_dir -> taild-head.txt
+used states: ['EOS_LPP']
+ignored states: ['bulk_EOS_FFA']
+Added FIXED head-taild (later stage; source=init_dir, file=taild-head.txt)
+Added optimize=True pairs: 1
+Added optimize=False (fixed) pairs: 3
+Skipped (type missing in any state): 0
+Staring cycle 1/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb8fe250>
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.77195942688954
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cc52a1790>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 62.03381972190363
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.835411
+
+Force: head-sticky, State: EOS_LPP, Iteration: 0, Fit score:0.871357
+
+smoothing potential: head-sticky
+Staring cycle 2/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb7f24d0>
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.99662962440152
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbe1f1150>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.809991576237664
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.900388
+
+Force: head-sticky, State: EOS_LPP, Iteration: 1, Fit score:0.911438
+
+smoothing potential: head-sticky
+Staring cycle 3/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb84bc10>
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.7792096981659
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb882650>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.84937876898147
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.891211
+
+Force: head-sticky, State: EOS_LPP, Iteration: 2, Fit score:0.910622
+
+smoothing potential: head-sticky
+Staring cycle 4/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb8fe150>
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.87305487714426
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb7f27d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.83125795467017
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.880113
+
+Force: head-sticky, State: EOS_LPP, Iteration: 3, Fit score:0.918561
+
+smoothing potential: head-sticky
+Staring cycle 5/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb6a0890>
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.8129624872582
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbd492890>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.872759188233154
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.888272
+
+Force: head-sticky, State: EOS_LPP, Iteration: 4, Fit score:0.913689
+
+smoothing potential: head-sticky
+Staring cycle 6/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb6f5fd0>
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.77068331003662
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbd4c2210>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.84436902778715
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.879166
+
+Force: head-sticky, State: EOS_LPP, Iteration: 5, Fit score:0.919207
+
+smoothing potential: head-sticky
+Staring cycle 7/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb70e310>
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 209.9543092414321
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbbe55ad0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 60.57634775329327
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.879043
+
+Force: head-sticky, State: EOS_LPP, Iteration: 6, Fit score:0.903763
+
+smoothing potential: head-sticky
+Staring cycle 8/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb68f210>
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 208.96116468393487
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb72de50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 60.755459636337214
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.894041
+
+Force: head-sticky, State: EOS_LPP, Iteration: 7, Fit score:0.919776
+
+smoothing potential: head-sticky
+Staring cycle 9/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb7ad610>
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 209.6540911677851
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb6a11d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 60.73575200207877
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.881039
+
+Force: head-sticky, State: EOS_LPP, Iteration: 8, Fit score:0.913093
+
+smoothing potential: head-sticky
+Staring cycle 10/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb74e990>
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 209.17982424791913
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb881890>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 60.872639551410956
+
+Force: head-sticky, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.892505
+
+Force: head-sticky, State: EOS_LPP, Iteration: 9, Fit score:0.921879
+
+smoothing potential: head-sticky
+Removing existing states/ directory...
+
+================================================================================
+RUNNING FFA STAGE 2
+================================================================================
+
+Loaded bond types: ['amide-mhead2', 'amide-tail', 'chead-ring1', 'chead-ring2', 'chme-ring2', 'chme-ring3', 'ctail-cterm', 'ctail-ring4', 'ester-sticky', 'ester-tail', 'ester-tail2', 'head-tail', 'mhead2-oh1', 'mhead2-oh2', 'mhead2-tail', 'ring1-ring2', 'ring1-ring3', 'ring1-ring4', 'ring2-ring3', 'ring3-ring4', 'tail-tail', 'tail-tail2', 'tail-taild', 'tail-ter2', 'taild-taild']
+Loaded angle types: ['amide-mhead2-oh1', 'amide-mhead2-oh2', 'amide-mhead2-tail', 'amide-tail-tail', 'chead-ring1-ring2', 'chead-ring1-ring3', 'chead-ring1-ring4', 'chead-ring2-chme', 'chead-ring2-ring1', 'chead-ring2-ring3', 'chme-ring2-ring1', 'chme-ring2-ring3', 'chme-ring3-ring1', 'chme-ring3-ring2', 'chme-ring3-ring4', 'ctail-ring4-ring1', 'ctail-ring4-ring3', 'cterm-ctail-ring4', 'ester-tail-tail', 'ester-tail2-tail', 'head-tail-tail', 'mhead2-amide-tail', 'mhead2-tail-tail', 'oh1-mhead2-oh2', 'oh1-mhead2-tail', 'oh2-mhead2-tail', 'ring1-chead-ring2', 'ring1-ring2-ring3', 'ring1-ring3-ring2', 'ring1-ring3-ring4', 'ring1-ring4-ring3', 'ring2-ring1-ring3', 'ring2-ring1-ring4', 'ring2-ring3-ring4', 'ring3-ring1-ring4', 'sticky-ester-tail', 'sticky-ester-tail2', 'tail-ester-tail2', 'tail-tail-tail', 'tail-tail-tail2', 'tail-tail-taild', 'tail-tail-ter2', 'tail-taild-taild', 'taild-tail-ter2']
+Loaded FIXED fallback init pair ring1-step8.pot.oh3 from ring1-step8.pot.oh3.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh2 from ring1-step8.pot.oh2.txt
+Loaded FIXED fallback init pair oh2-ctail from oh2-ctail.txt
+Loaded FIXED fallback init pair ter2-amide from ter2-amide.txt
+Loaded FIXED fallback init pair ter2-mhead2 from ter2-mhead2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.ter2 from ring1-step8.pot.ter2.txt
+Loaded FIXED fallback init pair amide-oh5 from amide-oh5.txt
+Loaded FIXED fallback init pair ter2-oh5 from ter2-oh5.txt
+Loaded FIXED fallback init pair stick1-stick2 from stick1-stick2.txt
+Loaded FIXED fallback init pair oh5-chme from oh5-chme.txt
+Loaded FIXED fallback init pair tail-mhead2 from tail-mhead2.txt
+Loaded FIXED fallback init pair ctail-ring3 from ctail-ring3.txt
+Loaded FIXED fallback init pair oh4-ring4 from oh4-ring4.txt
+Loaded FIXED fallback init pair oh4-oh3 from oh4-oh3.txt
+Loaded FIXED fallback init pair ring-ctail from ring-ctail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.ter2 from ring4-step8.pot.ter2.txt
+Loaded FIXED fallback init pair ring4-ring4 from ring4-ring4.txt
+Loaded FIXED fallback init pair oh5-oh5 from oh5-oh5.txt
+Loaded FIXED fallback init pair ter2-ring from ter2-ring.txt
+Loaded FIXED fallback init pair oh4-ring1 from oh4-ring1.txt
+Loaded FIXED fallback init pair ring2-ring3 from ring2-ring3.txt
+Loaded FIXED fallback init pair amide-amide from amide-amide.txt
+Loaded FIXED fallback init pair ring1-step8.pot.tail from ring1-step8.pot.tail.txt
+Loaded FIXED fallback init pair ter2-ctail from ter2-ctail.txt
+Loaded FIXED fallback init pair oh1-ring2 from oh1-ring2.txt
+Loaded FIXED fallback init pair tail-chme from tail-chme.txt
+Loaded FIXED fallback init pair tail-ctail from tail-ctail.txt
+Loaded FIXED fallback init pair stick2-stick2 from stick2-stick2.txt
+Loaded FIXED fallback init pair ter2-oh2 from ter2-oh2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.amide from ring2-step8.pot.amide.txt
+Loaded FIXED fallback init pair mhead2-ring from mhead2-ring.txt
+Loaded FIXED fallback init pair oh4-ring3 from oh4-ring3.txt
+Loaded FIXED fallback init pair chead-ring2 from chead-ring2.txt
+Loaded FIXED fallback init pair oh5-oh4 from oh5-oh4.txt
+Loaded FIXED fallback init pair ring3-step8.pot.mhead2 from ring3-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair chead-cterm from chead-cterm.txt
+Loaded FIXED fallback init pair oh3-stick2 from oh3-stick2.txt
+Loaded FIXED fallback init pair ring1-ring2 from ring1-ring2.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh2 from ring3-step8.pot.oh2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh5 from ring1-step8.pot.oh5.txt
+Loaded FIXED fallback init pair amide-chead from amide-chead.txt
+Loaded FIXED fallback init pair chead-chead from chead-chead.txt
+Loaded FIXED fallback init pair chead-water from chead-water.txt
+Loaded FIXED fallback init pair stick1-water from stick1-water.txt
+Loaded FIXED fallback init pair oh5-ring1 from oh5-ring1.txt
+Loaded FIXED fallback init pair ring4-ter2 from ring4-ter2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh4 from ring2-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh4-ring2 from oh4-ring2.txt
+Loaded FIXED fallback init pair oh4-head from oh4-head.txt
+Loaded FIXED fallback init pair tail-cterm from tail-cterm.txt
+Loaded FIXED fallback init pair ring2-step8.pot.ter2 from ring2-step8.pot.ter2.txt
+Loaded FIXED fallback init pair tail-stick1 from tail-stick1.txt
+Loaded FIXED fallback init pair mhead2-oh1 from mhead2-oh1.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh2 from ring4-step8.pot.oh2.txt
+Loaded FIXED fallback init pair tail-head from tail-head.txt
+Loaded FIXED fallback init pair ter2-water from ter2-water.txt
+Loaded FIXED fallback init pair ring1-ring1 from ring1-ring1.txt
+Loaded FIXED fallback init pair tail-ring from tail-ring.txt
+Loaded FIXED fallback init pair oh3-water from oh3-water.txt
+Loaded FIXED fallback init pair stick2-water from stick2-water.txt
+Loaded FIXED fallback init pair tail-water from tail-water.txt
+Loaded FIXED fallback init pair mhead2-chme from mhead2-chme.txt
+Loaded FIXED fallback init pair ter2-tail from ter2-tail.txt
+Loaded FIXED fallback init pair mhead2-ring1 from mhead2-ring1.txt
+Loaded FIXED fallback init pair head-chme from head-chme.txt
+Loaded FIXED fallback init pair ring2-ring4 from ring2-ring4.txt
+Loaded FIXED fallback init pair ring-chme from ring-chme.txt
+Loaded FIXED fallback init pair ring3-tail from ring3-tail.txt
+Loaded FIXED fallback init pair ter2-cterm from ter2-cterm.txt
+Loaded FIXED fallback init pair ring2-tail from ring2-tail.txt
+Loaded FIXED fallback init pair amide-ring3 from amide-ring3.txt
+Loaded FIXED fallback init pair oh1-oh2 from oh1-oh2.txt
+Loaded FIXED fallback init pair head-ring1 from head-ring1.txt
+Loaded FIXED fallback init pair oh1-ring3 from oh1-ring3.txt
+Loaded FIXED fallback init pair cterm-ring3 from cterm-ring3.txt
+Loaded FIXED fallback init pair amide-oh4 from amide-oh4.txt
+Loaded FIXED fallback init pair ring4-water from ring4-water.txt
+Loaded FIXED fallback init pair amide-water from amide-water.txt
+Loaded FIXED fallback init pair oh4-chead from oh4-chead.txt
+Loaded FIXED fallback init pair oh4-ctail from oh4-ctail.txt
+Loaded FIXED fallback init pair oh2-ring4 from oh2-ring4.txt
+Loaded FIXED fallback init pair oh1-cterm from oh1-cterm.txt
+Loaded FIXED fallback init pair mhead2-chead from mhead2-chead.txt
+Loaded FIXED fallback init pair ring1-water from ring1-water.txt
+Loaded FIXED fallback init pair chead-ctail from chead-ctail.txt
+Loaded FIXED fallback init pair ctail-ctail from ctail-ctail.txt
+Loaded FIXED fallback init pair ring1-tail from ring1-tail.txt
+Loaded FIXED fallback init pair amide-ring4 from amide-ring4.txt
+Loaded FIXED fallback init pair oh5-ring from oh5-ring.txt
+Loaded FIXED fallback init pair ring3-step8.pot.tail from ring3-step8.pot.tail.txt
+Loaded FIXED fallback init pair oh4-oh2 from oh4-oh2.txt
+Loaded FIXED fallback init pair oh2-water from oh2-water.txt
+Loaded FIXED fallback init pair head-ctail from head-ctail.txt
+Loaded FIXED fallback init pair ring2-water from ring2-water.txt
+Loaded FIXED fallback init pair oh4-cterm from oh4-cterm.txt
+Loaded FIXED fallback init pair oh2-chead from oh2-chead.txt
+Loaded FIXED fallback init pair amide-head from amide-head.txt
+Loaded FIXED fallback init pair ring3-step8.pot.head from ring3-step8.pot.head.txt
+Loaded FIXED fallback init pair oh5-oh2 from oh5-oh2.txt
+Loaded FIXED fallback init pair amide-chme from amide-chme.txt
+Loaded FIXED fallback init pair amide-mhead2 from amide-mhead2.txt
+Loaded FIXED fallback init pair ctail-water from ctail-water.txt
+Loaded FIXED fallback init pair tail-oh2 from tail-oh2.txt
+Loaded FIXED fallback init pair chme-water from chme-water.txt
+Loaded FIXED fallback init pair ter2-oh4 from ter2-oh4.txt
+Loaded FIXED fallback init pair cterm-ring4 from cterm-ring4.txt
+Loaded FIXED fallback init pair amide-stick2 from amide-stick2.txt
+Loaded FIXED fallback init pair ter2-chead from ter2-chead.txt
+Loaded FIXED fallback init pair ring1-ring3 from ring1-ring3.txt
+Loaded FIXED fallback init pair head-ring2 from head-ring2.txt
+Loaded FIXED fallback init pair oh1-chme from oh1-chme.txt
+Loaded FIXED fallback init pair ring1-ter2 from ring1-ter2.txt
+Loaded FIXED fallback init pair oh3-ring from oh3-ring.txt
+Loaded FIXED fallback init pair ring1-step8.pot.head from ring1-step8.pot.head.txt
+Loaded FIXED fallback init pair ter2-oh3 from ter2-oh3.txt
+Loaded FIXED fallback init pair ring3-water from ring3-water.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh5 from ring3-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh1-water from oh1-water.txt
+Loaded FIXED fallback init pair oh3-ring1 from oh3-ring1.txt
+Loaded FIXED fallback init pair amide-oh2 from amide-oh2.txt
+Loaded FIXED fallback init pair oh5-ring4 from oh5-ring4.txt
+Loaded FIXED fallback init pair ter2-ter2 from ter2-ter2.txt
+Loaded FIXED fallback init pair head-ring4 from head-ring4.txt
+Loaded FIXED fallback init pair oh3-oh3 from oh3-oh3.txt
+Loaded FIXED fallback init pair oh3-cterm from oh3-cterm.txt
+Loaded FIXED fallback init pair ring-ring from ring-ring.txt
+Loaded FIXED fallback init pair oh2-oh2 from oh2-oh2.txt
+Loaded FIXED fallback init pair tail-chead from tail-chead.txt
+Loaded FIXED fallback init pair oh3-oh4 from oh3-oh4.txt
+Loaded FIXED fallback init pair oh4-water from oh4-water.txt
+Loaded FIXED fallback init pair stick1-oh4 from stick1-oh4.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh3 from ring4-step8.pot.oh3.txt
+Loaded FIXED fallback init pair ctail-ring2 from ctail-ring2.txt
+Loaded FIXED fallback init pair chead-ring1 from chead-ring1.txt
+Loaded FIXED fallback init pair oh3-ring2 from oh3-ring2.txt
+Loaded FIXED fallback init pair tail-oh3 from tail-oh3.txt
+Loaded FIXED fallback init pair mhead2-ctail from mhead2-ctail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh5 from ring4-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh1-ctail from oh1-ctail.txt
+Loaded FIXED fallback init pair ctail-ring4 from ctail-ring4.txt
+Loaded FIXED fallback init pair chme-ring4 from chme-ring4.txt
+Loaded FIXED fallback init pair ring1-step8.pot.mhead2 from ring1-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair ring-cterm from ring-cterm.txt
+Loaded FIXED fallback init pair oh5-ctail from oh5-ctail.txt
+Loaded FIXED fallback init pair oh2-head from oh2-head.txt
+Loaded FIXED fallback init pair oh4-oh4 from oh4-oh4.txt
+Loaded FIXED fallback init pair amide-ring from amide-ring.txt
+Loaded FIXED fallback init pair tail-oh1 from tail-oh1.txt
+Loaded FIXED fallback init pair oh1-oh4 from oh1-oh4.txt
+Loaded FIXED fallback init pair mhead2-oh2 from mhead2-oh2.txt
+Loaded FIXED fallback init pair oh1-stick2 from oh1-stick2.txt
+Loaded FIXED fallback init pair oh3-chme from oh3-chme.txt
+Loaded FIXED fallback init pair ring4-step8.pot.head from ring4-step8.pot.head.txt
+Loaded FIXED fallback init pair mhead2-ring3 from mhead2-ring3.txt
+Loaded FIXED fallback init pair oh2-oh4 from oh2-oh4.txt
+Loaded FIXED fallback init pair water-water from water-water.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh4 from ring1-step8.pot.oh4.txt
+Loaded FIXED fallback init pair stick1-stick1 from stick1-stick1.txt
+Loaded FIXED fallback init pair mhead2-cterm from mhead2-cterm.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh1 from ring4-step8.pot.oh1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.mhead2 from ring2-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair tail-amide from tail-amide.txt
+Loaded FIXED fallback init pair amide-ctail from amide-ctail.txt
+Loaded FIXED fallback init pair oh1-chead from oh1-chead.txt
+Loaded FIXED fallback init pair oh4-stick2 from oh4-stick2.txt
+Loaded FIXED fallback init pair ter2-head from ter2-head.txt
+Loaded FIXED fallback init pair ring4-step8.pot.tail from ring4-step8.pot.tail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh4 from ring4-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh5-ring3 from oh5-ring3.txt
+Loaded FIXED fallback init pair oh2-ring1 from oh2-ring1.txt
+Loaded FIXED fallback init pair tail-oh4 from tail-oh4.txt
+Loaded FIXED fallback init pair oh2-cterm from oh2-cterm.txt
+Loaded FIXED fallback init pair tail-tail from tail-tail.txt
+Loaded FIXED fallback init pair head-chead from head-chead.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh1 from ring2-step8.pot.oh1.txt
+Loaded FIXED fallback init pair tail-stick2 from tail-stick2.txt
+Loaded FIXED fallback init pair amide-cterm from amide-cterm.txt
+Loaded FIXED fallback init pair oh5-head from oh5-head.txt
+Loaded FIXED fallback init pair cterm-cterm from cterm-cterm.txt
+Loaded FIXED fallback init pair chead-chme from chead-chme.txt
+Loaded FIXED fallback init pair mhead2-oh3 from mhead2-oh3.txt
+Loaded FIXED fallback init pair head-ring from head-ring.txt
+Loaded FIXED fallback init pair amide-ring2 from amide-ring2.txt
+Loaded FIXED fallback init pair ring4-step8.pot.mhead2 from ring4-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair oh3-oh2 from oh3-oh2.txt
+Loaded FIXED fallback init pair oh4-chme from oh4-chme.txt
+Loaded FIXED fallback init pair oh2-ring2 from oh2-ring2.txt
+Loaded FIXED fallback init pair ring2-ter2 from ring2-ter2.txt
+Loaded FIXED fallback init pair head-water from head-water.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh3 from ring2-step8.pot.oh3.txt
+Loaded FIXED fallback init pair head-ring3 from head-ring3.txt
+Loaded FIXED fallback init pair ring3-step8.pot.ter2 from ring3-step8.pot.ter2.txt
+Loaded FIXED fallback init pair oh5-cterm from oh5-cterm.txt
+Loaded FIXED fallback init pair ctail-chme from ctail-chme.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh1 from ring3-step8.pot.oh1.txt
+Loaded FIXED fallback init pair amide-oh3 from amide-oh3.txt
+Loaded FIXED fallback init pair amide-stick1 from amide-stick1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.head from ring2-step8.pot.head.txt
+Loaded FIXED fallback init pair oh1-head from oh1-head.txt
+Loaded FIXED fallback init pair chme-ring3 from chme-ring3.txt
+Loaded FIXED fallback init pair cterm-ring2 from cterm-ring2.txt
+Loaded FIXED fallback init pair ring2-ring2 from ring2-ring2.txt
+Loaded FIXED fallback init pair oh5-ring2 from oh5-ring2.txt
+Loaded FIXED fallback init pair ctail-cterm from ctail-cterm.txt
+Loaded FIXED fallback init pair oh1-ring1 from oh1-ring1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh5 from ring2-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh2-ring3 from oh2-ring3.txt
+Loaded FIXED fallback init pair mhead2-head from mhead2-head.txt
+Loaded FIXED fallback init pair oh5-stick2 from oh5-stick2.txt
+Loaded FIXED fallback init pair oh3-ring3 from oh3-ring3.txt
+Loaded FIXED fallback init pair oh1-oh3 from oh1-oh3.txt
+Loaded FIXED fallback init pair mhead2-oh4 from mhead2-oh4.txt
+Loaded FIXED fallback init pair mhead2-mhead2 from mhead2-mhead2.txt
+Loaded FIXED fallback init pair chead-ring from chead-ring.txt
+Loaded FIXED fallback init pair chme-chme from chme-chme.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh4 from ring3-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh5-water from oh5-water.txt
+Loaded FIXED fallback init pair chead-ring4 from chead-ring4.txt
+Loaded FIXED fallback init pair oh2-chme from oh2-chme.txt
+Loaded FIXED fallback init pair oh3-chead from oh3-chead.txt
+Loaded FIXED fallback init pair ring3-step8.pot.amide from ring3-step8.pot.amide.txt
+Loaded FIXED fallback init pair ter2-oh1 from ter2-oh1.txt
+Loaded FIXED fallback init pair stick1-oh2 from stick1-oh2.txt
+Loaded FIXED fallback init pair tail-oh5 from tail-oh5.txt
+Loaded FIXED fallback init pair cterm-ring1 from cterm-ring1.txt
+Loaded FIXED fallback init pair mhead2-stick1 from mhead2-stick1.txt
+Loaded FIXED fallback init pair oh1-ring from oh1-ring.txt
+Loaded FIXED fallback init pair cterm-chme from cterm-chme.txt
+Loaded FIXED fallback init pair ring-water from ring-water.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh2 from ring2-step8.pot.oh2.txt
+Loaded FIXED fallback init pair oh3-head from oh3-head.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh1 from ring1-step8.pot.oh1.txt
+Loaded FIXED fallback init pair oh5-oh1 from oh5-oh1.txt
+Loaded FIXED fallback init pair ring3-ter2 from ring3-ter2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.amide from ring1-step8.pot.amide.txt
+Loaded FIXED fallback init pair oh4-ring from oh4-ring.txt
+Loaded FIXED fallback init pair head-cterm from head-cterm.txt
+Loaded FIXED fallback init pair ring3-ring3 from ring3-ring3.txt
+Loaded FIXED fallback init pair ctail-ring1 from ctail-ring1.txt
+Loaded FIXED fallback init pair oh1-oh1 from oh1-oh1.txt
+Loaded FIXED fallback init pair ring1-ring4 from ring1-ring4.txt
+Loaded FIXED fallback init pair chme-ring2 from chme-ring2.txt
+Loaded FIXED fallback init pair amide-oh1 from amide-oh1.txt
+Loaded FIXED fallback init pair amide-ring1 from amide-ring1.txt
+Loaded FIXED fallback init pair cterm-water from cterm-water.txt
+Loaded FIXED fallback init pair oh5-chead from oh5-chead.txt
+Loaded FIXED fallback init pair oh2-ring from oh2-ring.txt
+Loaded FIXED fallback init pair mhead2-oh5 from mhead2-oh5.txt
+Loaded FIXED fallback init pair oh3-ring4 from oh3-ring4.txt
+Loaded FIXED fallback init pair oh1-ring4 from oh1-ring4.txt
+Loaded FIXED fallback init pair ring4-tail from ring4-tail.txt
+Loaded FIXED fallback init pair ring3-ring4 from ring3-ring4.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh3 from ring3-step8.pot.oh3.txt
+Loaded FIXED fallback init pair chead-ring3 from chead-ring3.txt
+Loaded FIXED fallback init pair mhead2-stick2 from mhead2-stick2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.tail from ring2-step8.pot.tail.txt
+Loaded FIXED fallback init pair mhead2-water from mhead2-water.txt
+Loaded FIXED fallback init pair oh3-ctail from oh3-ctail.txt
+Loaded FIXED fallback init pair oh5-oh3 from oh5-oh3.txt
+Loaded FIXED fallback init pair mhead2-ring2 from mhead2-ring2.txt
+Loaded FIXED fallback init pair ring4-step8.pot.amide from ring4-step8.pot.amide.txt
+Loaded FIXED fallback init pair chme-ring1 from chme-ring1.txt
+Loaded FIXED fallback init pair mhead2-ring4 from mhead2-ring4.txt
+Loaded FIXED fallback init pair ter2-chme from ter2-chme.txt
+Loaded FIXED fallback init pair head-head from head-head.txt
+Loaded FIXED fallback init pair sticky-water from sticky-water.txt
+Loaded FIXED fallback init pair ester-water from ester-water.txt
+Loaded FIXED fallback init pair taild-water from taild-water.txt
+Loaded FIXED fallback init pair tail2-water from tail2-water.txt
+Added fixed potentials: PAIR_DIR=265 tables, EXTRA_DIR=4 tables
+Loaded GLOBAL PRETRAINED pair ester-sticky
+Loaded GLOBAL PRETRAINED pair amide-sticky
+Loaded GLOBAL PRETRAINED pair tail-tail2
+Loaded GLOBAL PRETRAINED pair ester-taild
+Loaded GLOBAL PRETRAINED pair sticky-tail
+Loaded GLOBAL PRETRAINED pair mhead2-sticky
+Loaded GLOBAL PRETRAINED pair sticky-sticky
+Loaded GLOBAL PRETRAINED pair ester-ter2
+Loaded GLOBAL PRETRAINED pair tail-taild
+Loaded GLOBAL PRETRAINED pair amide-ester
+Loaded GLOBAL PRETRAINED pair taild-taild
+Loaded GLOBAL PRETRAINED pair oh1-taild
+Loaded GLOBAL PRETRAINED pair sticky-tail2
+Loaded GLOBAL PRETRAINED pair ester-ester
+Loaded GLOBAL PRETRAINED pair ester-tail
+Loaded GLOBAL PRETRAINED pair oh2-sticky
+Loaded GLOBAL PRETRAINED pair amide-tail2
+Loaded GLOBAL PRETRAINED pair tail2-tail2
+Loaded GLOBAL PRETRAINED pair oh1-tail2
+Loaded GLOBAL PRETRAINED pair oh1-sticky
+Loaded GLOBAL PRETRAINED pair tail2-ter2
+Loaded GLOBAL PRETRAINED pair mhead2-taild
+Loaded GLOBAL PRETRAINED pair ester-mhead2
+Loaded GLOBAL PRETRAINED pair taild-ter2
+Loaded GLOBAL PRETRAINED pair mhead2-tail2
+Loaded GLOBAL PRETRAINED pair ester-oh1
+Loaded GLOBAL PRETRAINED pair oh2-tail2
+Loaded GLOBAL PRETRAINED pair tail2-taild
+Loaded GLOBAL PRETRAINED pair sticky-taild
+Loaded GLOBAL PRETRAINED pair ester-oh2
+Loaded GLOBAL PRETRAINED pair oh2-taild
+Loaded GLOBAL PRETRAINED pair ester-tail2
+Loaded GLOBAL PRETRAINED pair sticky-ter2
+Loaded GLOBAL PRETRAINED pair amide-taild
+Loaded GLOBAL INIT fallback pair chead-ester from ester-chead.txt
+Loaded GLOBAL INIT fallback pair chead-sticky from sticky-chead.txt
+Loaded GLOBAL INIT fallback pair chead-tail2 from tail2-chead.txt
+Loaded GLOBAL INIT fallback pair chead-taild from taild-chead.txt
+Loaded GLOBAL INIT fallback pair chme-ester from ester-chme.txt
+Loaded GLOBAL INIT fallback pair chme-sticky from sticky-chme.txt
+Loaded GLOBAL INIT fallback pair chme-tail2 from tail2-chme.txt
+Loaded GLOBAL INIT fallback pair chme-taild from taild-chme.txt
+Loaded GLOBAL INIT fallback pair ctail-ester from ester-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-sticky from sticky-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-tail2 from tail2-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-taild from taild-ctail.txt
+Loaded GLOBAL INIT fallback pair cterm-ester from ester-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-sticky from sticky-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-tail2 from tail2-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-taild from taild-cterm.txt
+Loaded GLOBAL INIT fallback pair ester-ring1 from ester-ring1.txt
+Loaded GLOBAL INIT fallback pair ester-ring2 from ester-ring2.txt
+Loaded GLOBAL INIT fallback pair ester-ring3 from ester-ring3.txt
+Loaded GLOBAL INIT fallback pair ester-ring4 from ester-ring4.txt
+Loaded GLOBAL INIT fallback pair ring1-sticky from ring1-sticky.txt
+Loaded GLOBAL INIT fallback pair ring1-tail2 from ring1-tail2.txt
+Loaded GLOBAL INIT fallback pair ring1-taild from ring1-taild.txt
+Loaded GLOBAL INIT fallback pair ring2-sticky from ring2-sticky.txt
+Loaded GLOBAL INIT fallback pair ring2-tail2 from ring2-tail2.txt
+Loaded GLOBAL INIT fallback pair ring2-taild from ring2-taild.txt
+Loaded GLOBAL INIT fallback pair ring3-sticky from ring3-sticky.txt
+Loaded GLOBAL INIT fallback pair ring3-tail2 from ring3-tail2.txt
+Loaded GLOBAL INIT fallback pair ring3-taild from ring3-taild.txt
+Loaded GLOBAL INIT fallback pair ring4-sticky from ring4-sticky.txt
+Loaded GLOBAL INIT fallback pair ring4-tail2 from ring4-tail2.txt
+Loaded GLOBAL INIT fallback pair ring4-taild from ring4-taild.txt
+Types in all states: ['amide', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2'] Number of types: 11
+Global safe r_cut: 5.431623
+Types in ANY state: ['amide', 'chead', 'chme', 'ctail', 'cterm', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'ring1', 'ring2', 'ring3', 'ring4', 'sticky', 'tail', 'tail2', 'taild', 'ter2', 'water']
+Types in ALL states: ['amide', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2']
+[OPTIMIZE] ester-head
+source: init_dir -> ester-head.txt
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: []
+Added OPTIMIZE ester-head (source=init_dir, file=ester-head.txt)
+[FIXED] head-sticky
+source: current_stage_previous_output -> head-sticky.csv
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: []
+Added FIXED head-sticky (previous stage; source=current_stage_previous_output, file=head-sticky.csv)
+[FIXED] head-tail2
+source: init_dir -> tail2-head.txt
+used states: ['EOS_LPP']
+ignored states: ['bulk_EOS_FFA']
+Added FIXED head-tail2 (later stage; source=init_dir, file=tail2-head.txt)
+[FIXED] head-taild
+source: init_dir -> taild-head.txt
+used states: ['EOS_LPP']
+ignored states: ['bulk_EOS_FFA']
+Added FIXED head-taild (later stage; source=init_dir, file=taild-head.txt)
+Added optimize=True pairs: 1
+Added optimize=False (fixed) pairs: 3
+Skipped (type missing in any state): 0
+Staring cycle 1/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb78fc50>
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 211.15761348423632
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6df53437d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.36416292115055
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 0, Fit score:0.917323
+
+Force: ester-head, State: EOS_LPP, Iteration: 0, Fit score:0.904153
+
+smoothing potential: ester-head
+Staring cycle 2/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb6efa50>
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 211.18173542219185
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb850910>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.34071914195562
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 1, Fit score:0.929601
+
+Force: ester-head, State: EOS_LPP, Iteration: 1, Fit score:0.927842
+
+smoothing potential: ester-head
+Staring cycle 3/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb7af9d0>
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 211.27530158959846
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb6bdc50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.50221333747144
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 2, Fit score:0.874496
+
+Force: ester-head, State: EOS_LPP, Iteration: 2, Fit score:0.931666
+
+smoothing potential: ester-head
+Staring cycle 4/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbbec1f90>
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.71549445221484
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb882f90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.88055284754224
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 3, Fit score:0.881326
+
+Force: ester-head, State: EOS_LPP, Iteration: 3, Fit score:0.916881
+
+smoothing potential: ester-head
+Staring cycle 5/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb7f1750>
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.90441716187982
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbbde8050>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.88678024810323
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 4, Fit score:0.889178
+
+Force: ester-head, State: EOS_LPP, Iteration: 4, Fit score:0.921288
+
+smoothing potential: ester-head
+Staring cycle 6/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb5cccd0>
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.8549443094391
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbd52f150>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.87831796042551
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 5, Fit score:0.893064
+
+Force: ester-head, State: EOS_LPP, Iteration: 5, Fit score:0.906874
+
+smoothing potential: ester-head
+Staring cycle 7/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb925710>
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 213.02817446130493
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbd4955d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.87975564458983
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 6, Fit score:0.890012
+
+Force: ester-head, State: EOS_LPP, Iteration: 6, Fit score:0.913083
+
+smoothing potential: ester-head
+Staring cycle 8/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb75dc50>
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.75827628455428
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb88ddd0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.83253462265598
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 7, Fit score:0.887802
+
+Force: ester-head, State: EOS_LPP, Iteration: 7, Fit score:0.909969
+
+smoothing potential: ester-head
+Staring cycle 9/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb619bd0>
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 213.11286061155604
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbd4eded0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.8371826903086
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 8, Fit score:0.893431
+
+Force: ester-head, State: EOS_LPP, Iteration: 8, Fit score:0.913846
+
+smoothing potential: ester-head
+Staring cycle 10/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb676b10>
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.92351636393312
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb80b850>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.88027751759687
+
+Force: ester-head, State: bulk_EOS_FFA, Iteration: 9, Fit score:0.881210
+
+Force: ester-head, State: EOS_LPP, Iteration: 9, Fit score:0.889306
+
+smoothing potential: ester-head
+Removing existing states/ directory...
+
+================================================================================
+RUNNING FFA STAGE 3
+================================================================================
+
+Loaded bond types: ['amide-mhead2', 'amide-tail', 'chead-ring1', 'chead-ring2', 'chme-ring2', 'chme-ring3', 'ctail-cterm', 'ctail-ring4', 'ester-sticky', 'ester-tail', 'ester-tail2', 'head-tail', 'mhead2-oh1', 'mhead2-oh2', 'mhead2-tail', 'ring1-ring2', 'ring1-ring3', 'ring1-ring4', 'ring2-ring3', 'ring3-ring4', 'tail-tail', 'tail-tail2', 'tail-taild', 'tail-ter2', 'taild-taild']
+Loaded angle types: ['amide-mhead2-oh1', 'amide-mhead2-oh2', 'amide-mhead2-tail', 'amide-tail-tail', 'chead-ring1-ring2', 'chead-ring1-ring3', 'chead-ring1-ring4', 'chead-ring2-chme', 'chead-ring2-ring1', 'chead-ring2-ring3', 'chme-ring2-ring1', 'chme-ring2-ring3', 'chme-ring3-ring1', 'chme-ring3-ring2', 'chme-ring3-ring4', 'ctail-ring4-ring1', 'ctail-ring4-ring3', 'cterm-ctail-ring4', 'ester-tail-tail', 'ester-tail2-tail', 'head-tail-tail', 'mhead2-amide-tail', 'mhead2-tail-tail', 'oh1-mhead2-oh2', 'oh1-mhead2-tail', 'oh2-mhead2-tail', 'ring1-chead-ring2', 'ring1-ring2-ring3', 'ring1-ring3-ring2', 'ring1-ring3-ring4', 'ring1-ring4-ring3', 'ring2-ring1-ring3', 'ring2-ring1-ring4', 'ring2-ring3-ring4', 'ring3-ring1-ring4', 'sticky-ester-tail', 'sticky-ester-tail2', 'tail-ester-tail2', 'tail-tail-tail', 'tail-tail-tail2', 'tail-tail-taild', 'tail-tail-ter2', 'tail-taild-taild', 'taild-tail-ter2']
+Loaded FIXED fallback init pair ring1-step8.pot.oh3 from ring1-step8.pot.oh3.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh2 from ring1-step8.pot.oh2.txt
+Loaded FIXED fallback init pair oh2-ctail from oh2-ctail.txt
+Loaded FIXED fallback init pair ter2-amide from ter2-amide.txt
+Loaded FIXED fallback init pair ter2-mhead2 from ter2-mhead2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.ter2 from ring1-step8.pot.ter2.txt
+Loaded FIXED fallback init pair amide-oh5 from amide-oh5.txt
+Loaded FIXED fallback init pair ter2-oh5 from ter2-oh5.txt
+Loaded FIXED fallback init pair stick1-stick2 from stick1-stick2.txt
+Loaded FIXED fallback init pair oh5-chme from oh5-chme.txt
+Loaded FIXED fallback init pair tail-mhead2 from tail-mhead2.txt
+Loaded FIXED fallback init pair ctail-ring3 from ctail-ring3.txt
+Loaded FIXED fallback init pair oh4-ring4 from oh4-ring4.txt
+Loaded FIXED fallback init pair oh4-oh3 from oh4-oh3.txt
+Loaded FIXED fallback init pair ring-ctail from ring-ctail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.ter2 from ring4-step8.pot.ter2.txt
+Loaded FIXED fallback init pair ring4-ring4 from ring4-ring4.txt
+Loaded FIXED fallback init pair oh5-oh5 from oh5-oh5.txt
+Loaded FIXED fallback init pair ter2-ring from ter2-ring.txt
+Loaded FIXED fallback init pair oh4-ring1 from oh4-ring1.txt
+Loaded FIXED fallback init pair ring2-ring3 from ring2-ring3.txt
+Loaded FIXED fallback init pair amide-amide from amide-amide.txt
+Loaded FIXED fallback init pair ring1-step8.pot.tail from ring1-step8.pot.tail.txt
+Loaded FIXED fallback init pair ter2-ctail from ter2-ctail.txt
+Loaded FIXED fallback init pair oh1-ring2 from oh1-ring2.txt
+Loaded FIXED fallback init pair tail-chme from tail-chme.txt
+Loaded FIXED fallback init pair tail-ctail from tail-ctail.txt
+Loaded FIXED fallback init pair stick2-stick2 from stick2-stick2.txt
+Loaded FIXED fallback init pair ter2-oh2 from ter2-oh2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.amide from ring2-step8.pot.amide.txt
+Loaded FIXED fallback init pair mhead2-ring from mhead2-ring.txt
+Loaded FIXED fallback init pair oh4-ring3 from oh4-ring3.txt
+Loaded FIXED fallback init pair chead-ring2 from chead-ring2.txt
+Loaded FIXED fallback init pair oh5-oh4 from oh5-oh4.txt
+Loaded FIXED fallback init pair ring3-step8.pot.mhead2 from ring3-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair chead-cterm from chead-cterm.txt
+Loaded FIXED fallback init pair oh3-stick2 from oh3-stick2.txt
+Loaded FIXED fallback init pair ring1-ring2 from ring1-ring2.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh2 from ring3-step8.pot.oh2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh5 from ring1-step8.pot.oh5.txt
+Loaded FIXED fallback init pair amide-chead from amide-chead.txt
+Loaded FIXED fallback init pair chead-chead from chead-chead.txt
+Loaded FIXED fallback init pair chead-water from chead-water.txt
+Loaded FIXED fallback init pair stick1-water from stick1-water.txt
+Loaded FIXED fallback init pair oh5-ring1 from oh5-ring1.txt
+Loaded FIXED fallback init pair ring4-ter2 from ring4-ter2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh4 from ring2-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh4-ring2 from oh4-ring2.txt
+Loaded FIXED fallback init pair oh4-head from oh4-head.txt
+Loaded FIXED fallback init pair tail-cterm from tail-cterm.txt
+Loaded FIXED fallback init pair ring2-step8.pot.ter2 from ring2-step8.pot.ter2.txt
+Loaded FIXED fallback init pair tail-stick1 from tail-stick1.txt
+Loaded FIXED fallback init pair mhead2-oh1 from mhead2-oh1.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh2 from ring4-step8.pot.oh2.txt
+Loaded FIXED fallback init pair tail-head from tail-head.txt
+Loaded FIXED fallback init pair ter2-water from ter2-water.txt
+Loaded FIXED fallback init pair ring1-ring1 from ring1-ring1.txt
+Loaded FIXED fallback init pair tail-ring from tail-ring.txt
+Loaded FIXED fallback init pair oh3-water from oh3-water.txt
+Loaded FIXED fallback init pair stick2-water from stick2-water.txt
+Loaded FIXED fallback init pair tail-water from tail-water.txt
+Loaded FIXED fallback init pair mhead2-chme from mhead2-chme.txt
+Loaded FIXED fallback init pair ter2-tail from ter2-tail.txt
+Loaded FIXED fallback init pair mhead2-ring1 from mhead2-ring1.txt
+Loaded FIXED fallback init pair head-chme from head-chme.txt
+Loaded FIXED fallback init pair ring2-ring4 from ring2-ring4.txt
+Loaded FIXED fallback init pair ring-chme from ring-chme.txt
+Loaded FIXED fallback init pair ring3-tail from ring3-tail.txt
+Loaded FIXED fallback init pair ter2-cterm from ter2-cterm.txt
+Loaded FIXED fallback init pair ring2-tail from ring2-tail.txt
+Loaded FIXED fallback init pair amide-ring3 from amide-ring3.txt
+Loaded FIXED fallback init pair oh1-oh2 from oh1-oh2.txt
+Loaded FIXED fallback init pair head-ring1 from head-ring1.txt
+Loaded FIXED fallback init pair oh1-ring3 from oh1-ring3.txt
+Loaded FIXED fallback init pair cterm-ring3 from cterm-ring3.txt
+Loaded FIXED fallback init pair amide-oh4 from amide-oh4.txt
+Loaded FIXED fallback init pair ring4-water from ring4-water.txt
+Loaded FIXED fallback init pair amide-water from amide-water.txt
+Loaded FIXED fallback init pair oh4-chead from oh4-chead.txt
+Loaded FIXED fallback init pair oh4-ctail from oh4-ctail.txt
+Loaded FIXED fallback init pair oh2-ring4 from oh2-ring4.txt
+Loaded FIXED fallback init pair oh1-cterm from oh1-cterm.txt
+Loaded FIXED fallback init pair mhead2-chead from mhead2-chead.txt
+Loaded FIXED fallback init pair ring1-water from ring1-water.txt
+Loaded FIXED fallback init pair chead-ctail from chead-ctail.txt
+Loaded FIXED fallback init pair ctail-ctail from ctail-ctail.txt
+Loaded FIXED fallback init pair ring1-tail from ring1-tail.txt
+Loaded FIXED fallback init pair amide-ring4 from amide-ring4.txt
+Loaded FIXED fallback init pair oh5-ring from oh5-ring.txt
+Loaded FIXED fallback init pair ring3-step8.pot.tail from ring3-step8.pot.tail.txt
+Loaded FIXED fallback init pair oh4-oh2 from oh4-oh2.txt
+Loaded FIXED fallback init pair oh2-water from oh2-water.txt
+Loaded FIXED fallback init pair head-ctail from head-ctail.txt
+Loaded FIXED fallback init pair ring2-water from ring2-water.txt
+Loaded FIXED fallback init pair oh4-cterm from oh4-cterm.txt
+Loaded FIXED fallback init pair oh2-chead from oh2-chead.txt
+Loaded FIXED fallback init pair amide-head from amide-head.txt
+Loaded FIXED fallback init pair ring3-step8.pot.head from ring3-step8.pot.head.txt
+Loaded FIXED fallback init pair oh5-oh2 from oh5-oh2.txt
+Loaded FIXED fallback init pair amide-chme from amide-chme.txt
+Loaded FIXED fallback init pair amide-mhead2 from amide-mhead2.txt
+Loaded FIXED fallback init pair ctail-water from ctail-water.txt
+Loaded FIXED fallback init pair tail-oh2 from tail-oh2.txt
+Loaded FIXED fallback init pair chme-water from chme-water.txt
+Loaded FIXED fallback init pair ter2-oh4 from ter2-oh4.txt
+Loaded FIXED fallback init pair cterm-ring4 from cterm-ring4.txt
+Loaded FIXED fallback init pair amide-stick2 from amide-stick2.txt
+Loaded FIXED fallback init pair ter2-chead from ter2-chead.txt
+Loaded FIXED fallback init pair ring1-ring3 from ring1-ring3.txt
+Loaded FIXED fallback init pair head-ring2 from head-ring2.txt
+Loaded FIXED fallback init pair oh1-chme from oh1-chme.txt
+Loaded FIXED fallback init pair ring1-ter2 from ring1-ter2.txt
+Loaded FIXED fallback init pair oh3-ring from oh3-ring.txt
+Loaded FIXED fallback init pair ring1-step8.pot.head from ring1-step8.pot.head.txt
+Loaded FIXED fallback init pair ter2-oh3 from ter2-oh3.txt
+Loaded FIXED fallback init pair ring3-water from ring3-water.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh5 from ring3-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh1-water from oh1-water.txt
+Loaded FIXED fallback init pair oh3-ring1 from oh3-ring1.txt
+Loaded FIXED fallback init pair amide-oh2 from amide-oh2.txt
+Loaded FIXED fallback init pair oh5-ring4 from oh5-ring4.txt
+Loaded FIXED fallback init pair ter2-ter2 from ter2-ter2.txt
+Loaded FIXED fallback init pair head-ring4 from head-ring4.txt
+Loaded FIXED fallback init pair oh3-oh3 from oh3-oh3.txt
+Loaded FIXED fallback init pair oh3-cterm from oh3-cterm.txt
+Loaded FIXED fallback init pair ring-ring from ring-ring.txt
+Loaded FIXED fallback init pair oh2-oh2 from oh2-oh2.txt
+Loaded FIXED fallback init pair tail-chead from tail-chead.txt
+Loaded FIXED fallback init pair oh3-oh4 from oh3-oh4.txt
+Loaded FIXED fallback init pair oh4-water from oh4-water.txt
+Loaded FIXED fallback init pair stick1-oh4 from stick1-oh4.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh3 from ring4-step8.pot.oh3.txt
+Loaded FIXED fallback init pair ctail-ring2 from ctail-ring2.txt
+Loaded FIXED fallback init pair chead-ring1 from chead-ring1.txt
+Loaded FIXED fallback init pair oh3-ring2 from oh3-ring2.txt
+Loaded FIXED fallback init pair tail-oh3 from tail-oh3.txt
+Loaded FIXED fallback init pair mhead2-ctail from mhead2-ctail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh5 from ring4-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh1-ctail from oh1-ctail.txt
+Loaded FIXED fallback init pair ctail-ring4 from ctail-ring4.txt
+Loaded FIXED fallback init pair chme-ring4 from chme-ring4.txt
+Loaded FIXED fallback init pair ring1-step8.pot.mhead2 from ring1-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair ring-cterm from ring-cterm.txt
+Loaded FIXED fallback init pair oh5-ctail from oh5-ctail.txt
+Loaded FIXED fallback init pair oh2-head from oh2-head.txt
+Loaded FIXED fallback init pair oh4-oh4 from oh4-oh4.txt
+Loaded FIXED fallback init pair amide-ring from amide-ring.txt
+Loaded FIXED fallback init pair tail-oh1 from tail-oh1.txt
+Loaded FIXED fallback init pair oh1-oh4 from oh1-oh4.txt
+Loaded FIXED fallback init pair mhead2-oh2 from mhead2-oh2.txt
+Loaded FIXED fallback init pair oh1-stick2 from oh1-stick2.txt
+Loaded FIXED fallback init pair oh3-chme from oh3-chme.txt
+Loaded FIXED fallback init pair ring4-step8.pot.head from ring4-step8.pot.head.txt
+Loaded FIXED fallback init pair mhead2-ring3 from mhead2-ring3.txt
+Loaded FIXED fallback init pair oh2-oh4 from oh2-oh4.txt
+Loaded FIXED fallback init pair water-water from water-water.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh4 from ring1-step8.pot.oh4.txt
+Loaded FIXED fallback init pair stick1-stick1 from stick1-stick1.txt
+Loaded FIXED fallback init pair mhead2-cterm from mhead2-cterm.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh1 from ring4-step8.pot.oh1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.mhead2 from ring2-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair tail-amide from tail-amide.txt
+Loaded FIXED fallback init pair amide-ctail from amide-ctail.txt
+Loaded FIXED fallback init pair oh1-chead from oh1-chead.txt
+Loaded FIXED fallback init pair oh4-stick2 from oh4-stick2.txt
+Loaded FIXED fallback init pair ter2-head from ter2-head.txt
+Loaded FIXED fallback init pair ring4-step8.pot.tail from ring4-step8.pot.tail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh4 from ring4-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh5-ring3 from oh5-ring3.txt
+Loaded FIXED fallback init pair oh2-ring1 from oh2-ring1.txt
+Loaded FIXED fallback init pair tail-oh4 from tail-oh4.txt
+Loaded FIXED fallback init pair oh2-cterm from oh2-cterm.txt
+Loaded FIXED fallback init pair tail-tail from tail-tail.txt
+Loaded FIXED fallback init pair head-chead from head-chead.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh1 from ring2-step8.pot.oh1.txt
+Loaded FIXED fallback init pair tail-stick2 from tail-stick2.txt
+Loaded FIXED fallback init pair amide-cterm from amide-cterm.txt
+Loaded FIXED fallback init pair oh5-head from oh5-head.txt
+Loaded FIXED fallback init pair cterm-cterm from cterm-cterm.txt
+Loaded FIXED fallback init pair chead-chme from chead-chme.txt
+Loaded FIXED fallback init pair mhead2-oh3 from mhead2-oh3.txt
+Loaded FIXED fallback init pair head-ring from head-ring.txt
+Loaded FIXED fallback init pair amide-ring2 from amide-ring2.txt
+Loaded FIXED fallback init pair ring4-step8.pot.mhead2 from ring4-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair oh3-oh2 from oh3-oh2.txt
+Loaded FIXED fallback init pair oh4-chme from oh4-chme.txt
+Loaded FIXED fallback init pair oh2-ring2 from oh2-ring2.txt
+Loaded FIXED fallback init pair ring2-ter2 from ring2-ter2.txt
+Loaded FIXED fallback init pair head-water from head-water.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh3 from ring2-step8.pot.oh3.txt
+Loaded FIXED fallback init pair head-ring3 from head-ring3.txt
+Loaded FIXED fallback init pair ring3-step8.pot.ter2 from ring3-step8.pot.ter2.txt
+Loaded FIXED fallback init pair oh5-cterm from oh5-cterm.txt
+Loaded FIXED fallback init pair ctail-chme from ctail-chme.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh1 from ring3-step8.pot.oh1.txt
+Loaded FIXED fallback init pair amide-oh3 from amide-oh3.txt
+Loaded FIXED fallback init pair amide-stick1 from amide-stick1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.head from ring2-step8.pot.head.txt
+Loaded FIXED fallback init pair oh1-head from oh1-head.txt
+Loaded FIXED fallback init pair chme-ring3 from chme-ring3.txt
+Loaded FIXED fallback init pair cterm-ring2 from cterm-ring2.txt
+Loaded FIXED fallback init pair ring2-ring2 from ring2-ring2.txt
+Loaded FIXED fallback init pair oh5-ring2 from oh5-ring2.txt
+Loaded FIXED fallback init pair ctail-cterm from ctail-cterm.txt
+Loaded FIXED fallback init pair oh1-ring1 from oh1-ring1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh5 from ring2-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh2-ring3 from oh2-ring3.txt
+Loaded FIXED fallback init pair mhead2-head from mhead2-head.txt
+Loaded FIXED fallback init pair oh5-stick2 from oh5-stick2.txt
+Loaded FIXED fallback init pair oh3-ring3 from oh3-ring3.txt
+Loaded FIXED fallback init pair oh1-oh3 from oh1-oh3.txt
+Loaded FIXED fallback init pair mhead2-oh4 from mhead2-oh4.txt
+Loaded FIXED fallback init pair mhead2-mhead2 from mhead2-mhead2.txt
+Loaded FIXED fallback init pair chead-ring from chead-ring.txt
+Loaded FIXED fallback init pair chme-chme from chme-chme.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh4 from ring3-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh5-water from oh5-water.txt
+Loaded FIXED fallback init pair chead-ring4 from chead-ring4.txt
+Loaded FIXED fallback init pair oh2-chme from oh2-chme.txt
+Loaded FIXED fallback init pair oh3-chead from oh3-chead.txt
+Loaded FIXED fallback init pair ring3-step8.pot.amide from ring3-step8.pot.amide.txt
+Loaded FIXED fallback init pair ter2-oh1 from ter2-oh1.txt
+Loaded FIXED fallback init pair stick1-oh2 from stick1-oh2.txt
+Loaded FIXED fallback init pair tail-oh5 from tail-oh5.txt
+Loaded FIXED fallback init pair cterm-ring1 from cterm-ring1.txt
+Loaded FIXED fallback init pair mhead2-stick1 from mhead2-stick1.txt
+Loaded FIXED fallback init pair oh1-ring from oh1-ring.txt
+Loaded FIXED fallback init pair cterm-chme from cterm-chme.txt
+Loaded FIXED fallback init pair ring-water from ring-water.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh2 from ring2-step8.pot.oh2.txt
+Loaded FIXED fallback init pair oh3-head from oh3-head.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh1 from ring1-step8.pot.oh1.txt
+Loaded FIXED fallback init pair oh5-oh1 from oh5-oh1.txt
+Loaded FIXED fallback init pair ring3-ter2 from ring3-ter2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.amide from ring1-step8.pot.amide.txt
+Loaded FIXED fallback init pair oh4-ring from oh4-ring.txt
+Loaded FIXED fallback init pair head-cterm from head-cterm.txt
+Loaded FIXED fallback init pair ring3-ring3 from ring3-ring3.txt
+Loaded FIXED fallback init pair ctail-ring1 from ctail-ring1.txt
+Loaded FIXED fallback init pair oh1-oh1 from oh1-oh1.txt
+Loaded FIXED fallback init pair ring1-ring4 from ring1-ring4.txt
+Loaded FIXED fallback init pair chme-ring2 from chme-ring2.txt
+Loaded FIXED fallback init pair amide-oh1 from amide-oh1.txt
+Loaded FIXED fallback init pair amide-ring1 from amide-ring1.txt
+Loaded FIXED fallback init pair cterm-water from cterm-water.txt
+Loaded FIXED fallback init pair oh5-chead from oh5-chead.txt
+Loaded FIXED fallback init pair oh2-ring from oh2-ring.txt
+Loaded FIXED fallback init pair mhead2-oh5 from mhead2-oh5.txt
+Loaded FIXED fallback init pair oh3-ring4 from oh3-ring4.txt
+Loaded FIXED fallback init pair oh1-ring4 from oh1-ring4.txt
+Loaded FIXED fallback init pair ring4-tail from ring4-tail.txt
+Loaded FIXED fallback init pair ring3-ring4 from ring3-ring4.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh3 from ring3-step8.pot.oh3.txt
+Loaded FIXED fallback init pair chead-ring3 from chead-ring3.txt
+Loaded FIXED fallback init pair mhead2-stick2 from mhead2-stick2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.tail from ring2-step8.pot.tail.txt
+Loaded FIXED fallback init pair mhead2-water from mhead2-water.txt
+Loaded FIXED fallback init pair oh3-ctail from oh3-ctail.txt
+Loaded FIXED fallback init pair oh5-oh3 from oh5-oh3.txt
+Loaded FIXED fallback init pair mhead2-ring2 from mhead2-ring2.txt
+Loaded FIXED fallback init pair ring4-step8.pot.amide from ring4-step8.pot.amide.txt
+Loaded FIXED fallback init pair chme-ring1 from chme-ring1.txt
+Loaded FIXED fallback init pair mhead2-ring4 from mhead2-ring4.txt
+Loaded FIXED fallback init pair ter2-chme from ter2-chme.txt
+Loaded FIXED fallback init pair head-head from head-head.txt
+Loaded FIXED fallback init pair sticky-water from sticky-water.txt
+Loaded FIXED fallback init pair ester-water from ester-water.txt
+Loaded FIXED fallback init pair taild-water from taild-water.txt
+Loaded FIXED fallback init pair tail2-water from tail2-water.txt
+Added fixed potentials: PAIR_DIR=265 tables, EXTRA_DIR=4 tables
+Loaded GLOBAL PRETRAINED pair ester-sticky
+Loaded GLOBAL PRETRAINED pair amide-sticky
+Loaded GLOBAL PRETRAINED pair tail-tail2
+Loaded GLOBAL PRETRAINED pair ester-taild
+Loaded GLOBAL PRETRAINED pair sticky-tail
+Loaded GLOBAL PRETRAINED pair mhead2-sticky
+Loaded GLOBAL PRETRAINED pair sticky-sticky
+Loaded GLOBAL PRETRAINED pair ester-ter2
+Loaded GLOBAL PRETRAINED pair tail-taild
+Loaded GLOBAL PRETRAINED pair amide-ester
+Loaded GLOBAL PRETRAINED pair taild-taild
+Loaded GLOBAL PRETRAINED pair oh1-taild
+Loaded GLOBAL PRETRAINED pair sticky-tail2
+Loaded GLOBAL PRETRAINED pair ester-ester
+Loaded GLOBAL PRETRAINED pair ester-tail
+Loaded GLOBAL PRETRAINED pair oh2-sticky
+Loaded GLOBAL PRETRAINED pair amide-tail2
+Loaded GLOBAL PRETRAINED pair tail2-tail2
+Loaded GLOBAL PRETRAINED pair oh1-tail2
+Loaded GLOBAL PRETRAINED pair oh1-sticky
+Loaded GLOBAL PRETRAINED pair tail2-ter2
+Loaded GLOBAL PRETRAINED pair mhead2-taild
+Loaded GLOBAL PRETRAINED pair ester-mhead2
+Loaded GLOBAL PRETRAINED pair taild-ter2
+Loaded GLOBAL PRETRAINED pair mhead2-tail2
+Loaded GLOBAL PRETRAINED pair ester-oh1
+Loaded GLOBAL PRETRAINED pair oh2-tail2
+Loaded GLOBAL PRETRAINED pair tail2-taild
+Loaded GLOBAL PRETRAINED pair sticky-taild
+Loaded GLOBAL PRETRAINED pair ester-oh2
+Loaded GLOBAL PRETRAINED pair oh2-taild
+Loaded GLOBAL PRETRAINED pair ester-tail2
+Loaded GLOBAL PRETRAINED pair sticky-ter2
+Loaded GLOBAL PRETRAINED pair amide-taild
+Loaded GLOBAL INIT fallback pair chead-ester from ester-chead.txt
+Loaded GLOBAL INIT fallback pair chead-sticky from sticky-chead.txt
+Loaded GLOBAL INIT fallback pair chead-tail2 from tail2-chead.txt
+Loaded GLOBAL INIT fallback pair chead-taild from taild-chead.txt
+Loaded GLOBAL INIT fallback pair chme-ester from ester-chme.txt
+Loaded GLOBAL INIT fallback pair chme-sticky from sticky-chme.txt
+Loaded GLOBAL INIT fallback pair chme-tail2 from tail2-chme.txt
+Loaded GLOBAL INIT fallback pair chme-taild from taild-chme.txt
+Loaded GLOBAL INIT fallback pair ctail-ester from ester-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-sticky from sticky-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-tail2 from tail2-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-taild from taild-ctail.txt
+Loaded GLOBAL INIT fallback pair cterm-ester from ester-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-sticky from sticky-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-tail2 from tail2-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-taild from taild-cterm.txt
+Loaded GLOBAL INIT fallback pair ester-ring1 from ester-ring1.txt
+Loaded GLOBAL INIT fallback pair ester-ring2 from ester-ring2.txt
+Loaded GLOBAL INIT fallback pair ester-ring3 from ester-ring3.txt
+Loaded GLOBAL INIT fallback pair ester-ring4 from ester-ring4.txt
+Loaded GLOBAL INIT fallback pair ring1-sticky from ring1-sticky.txt
+Loaded GLOBAL INIT fallback pair ring1-tail2 from ring1-tail2.txt
+Loaded GLOBAL INIT fallback pair ring1-taild from ring1-taild.txt
+Loaded GLOBAL INIT fallback pair ring2-sticky from ring2-sticky.txt
+Loaded GLOBAL INIT fallback pair ring2-tail2 from ring2-tail2.txt
+Loaded GLOBAL INIT fallback pair ring2-taild from ring2-taild.txt
+Loaded GLOBAL INIT fallback pair ring3-sticky from ring3-sticky.txt
+Loaded GLOBAL INIT fallback pair ring3-tail2 from ring3-tail2.txt
+Loaded GLOBAL INIT fallback pair ring3-taild from ring3-taild.txt
+Loaded GLOBAL INIT fallback pair ring4-sticky from ring4-sticky.txt
+Loaded GLOBAL INIT fallback pair ring4-tail2 from ring4-tail2.txt
+Loaded GLOBAL INIT fallback pair ring4-taild from ring4-taild.txt
+Types in all states: ['amide', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2'] Number of types: 11
+Global safe r_cut: 5.431623
+Types in ANY state: ['amide', 'chead', 'chme', 'ctail', 'cterm', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'ring1', 'ring2', 'ring3', 'ring4', 'sticky', 'tail', 'tail2', 'taild', 'ter2', 'water']
+Types in ALL states: ['amide', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2']
+[FIXED] ester-head
+source: current_stage_previous_output -> ester-head.csv
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: []
+Added FIXED ester-head (previous stage; source=current_stage_previous_output, file=ester-head.csv)
+[FIXED] head-sticky
+source: current_stage_previous_output -> head-sticky.csv
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: []
+Added FIXED head-sticky (previous stage; source=current_stage_previous_output, file=head-sticky.csv)
+[FIXED] head-tail2
+source: init_dir -> tail2-head.txt
+used states: ['EOS_LPP']
+ignored states: ['bulk_EOS_FFA']
+Added FIXED head-tail2 (later stage; source=init_dir, file=tail2-head.txt)
+[OPTIMIZE] head-taild
+source: init_dir -> taild-head.txt
+used states: ['EOS_LPP']
+ignored states: ['bulk_EOS_FFA']
+Added OPTIMIZE head-taild (source=init_dir, file=taild-head.txt)
+Added optimize=True pairs: 1
+Added optimize=False (fixed) pairs: 3
+Skipped (type missing in any state): 0
+Staring cycle 1/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbbe8ea50>
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.55256778369935
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb7df850>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.979157376249226
+
+Force: head-taild, State: EOS_LPP, Iteration: 0, Fit score:0.866128
+
+smoothing potential: head-taild
+Staring cycle 2/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb6cfb90>
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.50494124458316
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb58fdd0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.95016130462198
+
+Force: head-taild, State: EOS_LPP, Iteration: 1, Fit score:0.937171
+
+smoothing potential: head-taild
+Staring cycle 3/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb7f1a90>
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 213.24955171297663
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb635f10>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.95858458959268
+
+Force: head-taild, State: EOS_LPP, Iteration: 2, Fit score:0.952684
+
+smoothing potential: head-taild
+Staring cycle 4/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb496890>
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.49768951262195
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb7ad410>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.93904634788661
+
+Force: head-taild, State: EOS_LPP, Iteration: 3, Fit score:0.930373
+
+smoothing potential: head-taild
+Staring cycle 5/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb4ef850>
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.95177916931164
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbbe45750>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.9325565601965
+
+Force: head-taild, State: EOS_LPP, Iteration: 4, Fit score:0.908176
+
+smoothing potential: head-taild
+Staring cycle 6/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb5cf5d0>
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.77142829820573
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb5d1c90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.934464766281515
+
+Force: head-taild, State: EOS_LPP, Iteration: 5, Fit score:0.914180
+
+smoothing potential: head-taild
+Staring cycle 7/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbbe1cb90>
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.8635220834521
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbd52ef50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.97011223106223
+
+Force: head-taild, State: EOS_LPP, Iteration: 6, Fit score:0.955721
+
+smoothing potential: head-taild
+Staring cycle 8/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb53ce90>
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.81343852475447
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb511950>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.826948155942624
+
+Force: head-taild, State: EOS_LPP, Iteration: 7, Fit score:0.981095
+
+smoothing potential: head-taild
+Staring cycle 9/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb391f50>
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 213.04387976058655
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb834d50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.95104396647791
+
+Force: head-taild, State: EOS_LPP, Iteration: 8, Fit score:0.975424
+
+smoothing potential: head-taild
+Staring cycle 10/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb704110>
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.27723707406798
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb51dd10>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.86049907012593
+
+Force: head-taild, State: EOS_LPP, Iteration: 9, Fit score:0.955780
+
+smoothing potential: head-taild
+Removing existing states/ directory...
+
+================================================================================
+RUNNING FFA STAGE 4
+================================================================================
+
+Loaded bond types: ['amide-mhead2', 'amide-tail', 'chead-ring1', 'chead-ring2', 'chme-ring2', 'chme-ring3', 'ctail-cterm', 'ctail-ring4', 'ester-sticky', 'ester-tail', 'ester-tail2', 'head-tail', 'mhead2-oh1', 'mhead2-oh2', 'mhead2-tail', 'ring1-ring2', 'ring1-ring3', 'ring1-ring4', 'ring2-ring3', 'ring3-ring4', 'tail-tail', 'tail-tail2', 'tail-taild', 'tail-ter2', 'taild-taild']
+Loaded angle types: ['amide-mhead2-oh1', 'amide-mhead2-oh2', 'amide-mhead2-tail', 'amide-tail-tail', 'chead-ring1-ring2', 'chead-ring1-ring3', 'chead-ring1-ring4', 'chead-ring2-chme', 'chead-ring2-ring1', 'chead-ring2-ring3', 'chme-ring2-ring1', 'chme-ring2-ring3', 'chme-ring3-ring1', 'chme-ring3-ring2', 'chme-ring3-ring4', 'ctail-ring4-ring1', 'ctail-ring4-ring3', 'cterm-ctail-ring4', 'ester-tail-tail', 'ester-tail2-tail', 'head-tail-tail', 'mhead2-amide-tail', 'mhead2-tail-tail', 'oh1-mhead2-oh2', 'oh1-mhead2-tail', 'oh2-mhead2-tail', 'ring1-chead-ring2', 'ring1-ring2-ring3', 'ring1-ring3-ring2', 'ring1-ring3-ring4', 'ring1-ring4-ring3', 'ring2-ring1-ring3', 'ring2-ring1-ring4', 'ring2-ring3-ring4', 'ring3-ring1-ring4', 'sticky-ester-tail', 'sticky-ester-tail2', 'tail-ester-tail2', 'tail-tail-tail', 'tail-tail-tail2', 'tail-tail-taild', 'tail-tail-ter2', 'tail-taild-taild', 'taild-tail-ter2']
+Loaded FIXED fallback init pair ring1-step8.pot.oh3 from ring1-step8.pot.oh3.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh2 from ring1-step8.pot.oh2.txt
+Loaded FIXED fallback init pair oh2-ctail from oh2-ctail.txt
+Loaded FIXED fallback init pair ter2-amide from ter2-amide.txt
+Loaded FIXED fallback init pair ter2-mhead2 from ter2-mhead2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.ter2 from ring1-step8.pot.ter2.txt
+Loaded FIXED fallback init pair amide-oh5 from amide-oh5.txt
+Loaded FIXED fallback init pair ter2-oh5 from ter2-oh5.txt
+Loaded FIXED fallback init pair stick1-stick2 from stick1-stick2.txt
+Loaded FIXED fallback init pair oh5-chme from oh5-chme.txt
+Loaded FIXED fallback init pair tail-mhead2 from tail-mhead2.txt
+Loaded FIXED fallback init pair ctail-ring3 from ctail-ring3.txt
+Loaded FIXED fallback init pair oh4-ring4 from oh4-ring4.txt
+Loaded FIXED fallback init pair oh4-oh3 from oh4-oh3.txt
+Loaded FIXED fallback init pair ring-ctail from ring-ctail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.ter2 from ring4-step8.pot.ter2.txt
+Loaded FIXED fallback init pair ring4-ring4 from ring4-ring4.txt
+Loaded FIXED fallback init pair oh5-oh5 from oh5-oh5.txt
+Loaded FIXED fallback init pair ter2-ring from ter2-ring.txt
+Loaded FIXED fallback init pair oh4-ring1 from oh4-ring1.txt
+Loaded FIXED fallback init pair ring2-ring3 from ring2-ring3.txt
+Loaded FIXED fallback init pair amide-amide from amide-amide.txt
+Loaded FIXED fallback init pair ring1-step8.pot.tail from ring1-step8.pot.tail.txt
+Loaded FIXED fallback init pair ter2-ctail from ter2-ctail.txt
+Loaded FIXED fallback init pair oh1-ring2 from oh1-ring2.txt
+Loaded FIXED fallback init pair tail-chme from tail-chme.txt
+Loaded FIXED fallback init pair tail-ctail from tail-ctail.txt
+Loaded FIXED fallback init pair stick2-stick2 from stick2-stick2.txt
+Loaded FIXED fallback init pair ter2-oh2 from ter2-oh2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.amide from ring2-step8.pot.amide.txt
+Loaded FIXED fallback init pair mhead2-ring from mhead2-ring.txt
+Loaded FIXED fallback init pair oh4-ring3 from oh4-ring3.txt
+Loaded FIXED fallback init pair chead-ring2 from chead-ring2.txt
+Loaded FIXED fallback init pair oh5-oh4 from oh5-oh4.txt
+Loaded FIXED fallback init pair ring3-step8.pot.mhead2 from ring3-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair chead-cterm from chead-cterm.txt
+Loaded FIXED fallback init pair oh3-stick2 from oh3-stick2.txt
+Loaded FIXED fallback init pair ring1-ring2 from ring1-ring2.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh2 from ring3-step8.pot.oh2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh5 from ring1-step8.pot.oh5.txt
+Loaded FIXED fallback init pair amide-chead from amide-chead.txt
+Loaded FIXED fallback init pair chead-chead from chead-chead.txt
+Loaded FIXED fallback init pair chead-water from chead-water.txt
+Loaded FIXED fallback init pair stick1-water from stick1-water.txt
+Loaded FIXED fallback init pair oh5-ring1 from oh5-ring1.txt
+Loaded FIXED fallback init pair ring4-ter2 from ring4-ter2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh4 from ring2-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh4-ring2 from oh4-ring2.txt
+Loaded FIXED fallback init pair oh4-head from oh4-head.txt
+Loaded FIXED fallback init pair tail-cterm from tail-cterm.txt
+Loaded FIXED fallback init pair ring2-step8.pot.ter2 from ring2-step8.pot.ter2.txt
+Loaded FIXED fallback init pair tail-stick1 from tail-stick1.txt
+Loaded FIXED fallback init pair mhead2-oh1 from mhead2-oh1.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh2 from ring4-step8.pot.oh2.txt
+Loaded FIXED fallback init pair tail-head from tail-head.txt
+Loaded FIXED fallback init pair ter2-water from ter2-water.txt
+Loaded FIXED fallback init pair ring1-ring1 from ring1-ring1.txt
+Loaded FIXED fallback init pair tail-ring from tail-ring.txt
+Loaded FIXED fallback init pair oh3-water from oh3-water.txt
+Loaded FIXED fallback init pair stick2-water from stick2-water.txt
+Loaded FIXED fallback init pair tail-water from tail-water.txt
+Loaded FIXED fallback init pair mhead2-chme from mhead2-chme.txt
+Loaded FIXED fallback init pair ter2-tail from ter2-tail.txt
+Loaded FIXED fallback init pair mhead2-ring1 from mhead2-ring1.txt
+Loaded FIXED fallback init pair head-chme from head-chme.txt
+Loaded FIXED fallback init pair ring2-ring4 from ring2-ring4.txt
+Loaded FIXED fallback init pair ring-chme from ring-chme.txt
+Loaded FIXED fallback init pair ring3-tail from ring3-tail.txt
+Loaded FIXED fallback init pair ter2-cterm from ter2-cterm.txt
+Loaded FIXED fallback init pair ring2-tail from ring2-tail.txt
+Loaded FIXED fallback init pair amide-ring3 from amide-ring3.txt
+Loaded FIXED fallback init pair oh1-oh2 from oh1-oh2.txt
+Loaded FIXED fallback init pair head-ring1 from head-ring1.txt
+Loaded FIXED fallback init pair oh1-ring3 from oh1-ring3.txt
+Loaded FIXED fallback init pair cterm-ring3 from cterm-ring3.txt
+Loaded FIXED fallback init pair amide-oh4 from amide-oh4.txt
+Loaded FIXED fallback init pair ring4-water from ring4-water.txt
+Loaded FIXED fallback init pair amide-water from amide-water.txt
+Loaded FIXED fallback init pair oh4-chead from oh4-chead.txt
+Loaded FIXED fallback init pair oh4-ctail from oh4-ctail.txt
+Loaded FIXED fallback init pair oh2-ring4 from oh2-ring4.txt
+Loaded FIXED fallback init pair oh1-cterm from oh1-cterm.txt
+Loaded FIXED fallback init pair mhead2-chead from mhead2-chead.txt
+Loaded FIXED fallback init pair ring1-water from ring1-water.txt
+Loaded FIXED fallback init pair chead-ctail from chead-ctail.txt
+Loaded FIXED fallback init pair ctail-ctail from ctail-ctail.txt
+Loaded FIXED fallback init pair ring1-tail from ring1-tail.txt
+Loaded FIXED fallback init pair amide-ring4 from amide-ring4.txt
+Loaded FIXED fallback init pair oh5-ring from oh5-ring.txt
+Loaded FIXED fallback init pair ring3-step8.pot.tail from ring3-step8.pot.tail.txt
+Loaded FIXED fallback init pair oh4-oh2 from oh4-oh2.txt
+Loaded FIXED fallback init pair oh2-water from oh2-water.txt
+Loaded FIXED fallback init pair head-ctail from head-ctail.txt
+Loaded FIXED fallback init pair ring2-water from ring2-water.txt
+Loaded FIXED fallback init pair oh4-cterm from oh4-cterm.txt
+Loaded FIXED fallback init pair oh2-chead from oh2-chead.txt
+Loaded FIXED fallback init pair amide-head from amide-head.txt
+Loaded FIXED fallback init pair ring3-step8.pot.head from ring3-step8.pot.head.txt
+Loaded FIXED fallback init pair oh5-oh2 from oh5-oh2.txt
+Loaded FIXED fallback init pair amide-chme from amide-chme.txt
+Loaded FIXED fallback init pair amide-mhead2 from amide-mhead2.txt
+Loaded FIXED fallback init pair ctail-water from ctail-water.txt
+Loaded FIXED fallback init pair tail-oh2 from tail-oh2.txt
+Loaded FIXED fallback init pair chme-water from chme-water.txt
+Loaded FIXED fallback init pair ter2-oh4 from ter2-oh4.txt
+Loaded FIXED fallback init pair cterm-ring4 from cterm-ring4.txt
+Loaded FIXED fallback init pair amide-stick2 from amide-stick2.txt
+Loaded FIXED fallback init pair ter2-chead from ter2-chead.txt
+Loaded FIXED fallback init pair ring1-ring3 from ring1-ring3.txt
+Loaded FIXED fallback init pair head-ring2 from head-ring2.txt
+Loaded FIXED fallback init pair oh1-chme from oh1-chme.txt
+Loaded FIXED fallback init pair ring1-ter2 from ring1-ter2.txt
+Loaded FIXED fallback init pair oh3-ring from oh3-ring.txt
+Loaded FIXED fallback init pair ring1-step8.pot.head from ring1-step8.pot.head.txt
+Loaded FIXED fallback init pair ter2-oh3 from ter2-oh3.txt
+Loaded FIXED fallback init pair ring3-water from ring3-water.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh5 from ring3-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh1-water from oh1-water.txt
+Loaded FIXED fallback init pair oh3-ring1 from oh3-ring1.txt
+Loaded FIXED fallback init pair amide-oh2 from amide-oh2.txt
+Loaded FIXED fallback init pair oh5-ring4 from oh5-ring4.txt
+Loaded FIXED fallback init pair ter2-ter2 from ter2-ter2.txt
+Loaded FIXED fallback init pair head-ring4 from head-ring4.txt
+Loaded FIXED fallback init pair oh3-oh3 from oh3-oh3.txt
+Loaded FIXED fallback init pair oh3-cterm from oh3-cterm.txt
+Loaded FIXED fallback init pair ring-ring from ring-ring.txt
+Loaded FIXED fallback init pair oh2-oh2 from oh2-oh2.txt
+Loaded FIXED fallback init pair tail-chead from tail-chead.txt
+Loaded FIXED fallback init pair oh3-oh4 from oh3-oh4.txt
+Loaded FIXED fallback init pair oh4-water from oh4-water.txt
+Loaded FIXED fallback init pair stick1-oh4 from stick1-oh4.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh3 from ring4-step8.pot.oh3.txt
+Loaded FIXED fallback init pair ctail-ring2 from ctail-ring2.txt
+Loaded FIXED fallback init pair chead-ring1 from chead-ring1.txt
+Loaded FIXED fallback init pair oh3-ring2 from oh3-ring2.txt
+Loaded FIXED fallback init pair tail-oh3 from tail-oh3.txt
+Loaded FIXED fallback init pair mhead2-ctail from mhead2-ctail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh5 from ring4-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh1-ctail from oh1-ctail.txt
+Loaded FIXED fallback init pair ctail-ring4 from ctail-ring4.txt
+Loaded FIXED fallback init pair chme-ring4 from chme-ring4.txt
+Loaded FIXED fallback init pair ring1-step8.pot.mhead2 from ring1-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair ring-cterm from ring-cterm.txt
+Loaded FIXED fallback init pair oh5-ctail from oh5-ctail.txt
+Loaded FIXED fallback init pair oh2-head from oh2-head.txt
+Loaded FIXED fallback init pair oh4-oh4 from oh4-oh4.txt
+Loaded FIXED fallback init pair amide-ring from amide-ring.txt
+Loaded FIXED fallback init pair tail-oh1 from tail-oh1.txt
+Loaded FIXED fallback init pair oh1-oh4 from oh1-oh4.txt
+Loaded FIXED fallback init pair mhead2-oh2 from mhead2-oh2.txt
+Loaded FIXED fallback init pair oh1-stick2 from oh1-stick2.txt
+Loaded FIXED fallback init pair oh3-chme from oh3-chme.txt
+Loaded FIXED fallback init pair ring4-step8.pot.head from ring4-step8.pot.head.txt
+Loaded FIXED fallback init pair mhead2-ring3 from mhead2-ring3.txt
+Loaded FIXED fallback init pair oh2-oh4 from oh2-oh4.txt
+Loaded FIXED fallback init pair water-water from water-water.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh4 from ring1-step8.pot.oh4.txt
+Loaded FIXED fallback init pair stick1-stick1 from stick1-stick1.txt
+Loaded FIXED fallback init pair mhead2-cterm from mhead2-cterm.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh1 from ring4-step8.pot.oh1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.mhead2 from ring2-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair tail-amide from tail-amide.txt
+Loaded FIXED fallback init pair amide-ctail from amide-ctail.txt
+Loaded FIXED fallback init pair oh1-chead from oh1-chead.txt
+Loaded FIXED fallback init pair oh4-stick2 from oh4-stick2.txt
+Loaded FIXED fallback init pair ter2-head from ter2-head.txt
+Loaded FIXED fallback init pair ring4-step8.pot.tail from ring4-step8.pot.tail.txt
+Loaded FIXED fallback init pair ring4-step8.pot.oh4 from ring4-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh5-ring3 from oh5-ring3.txt
+Loaded FIXED fallback init pair oh2-ring1 from oh2-ring1.txt
+Loaded FIXED fallback init pair tail-oh4 from tail-oh4.txt
+Loaded FIXED fallback init pair oh2-cterm from oh2-cterm.txt
+Loaded FIXED fallback init pair tail-tail from tail-tail.txt
+Loaded FIXED fallback init pair head-chead from head-chead.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh1 from ring2-step8.pot.oh1.txt
+Loaded FIXED fallback init pair tail-stick2 from tail-stick2.txt
+Loaded FIXED fallback init pair amide-cterm from amide-cterm.txt
+Loaded FIXED fallback init pair oh5-head from oh5-head.txt
+Loaded FIXED fallback init pair cterm-cterm from cterm-cterm.txt
+Loaded FIXED fallback init pair chead-chme from chead-chme.txt
+Loaded FIXED fallback init pair mhead2-oh3 from mhead2-oh3.txt
+Loaded FIXED fallback init pair head-ring from head-ring.txt
+Loaded FIXED fallback init pair amide-ring2 from amide-ring2.txt
+Loaded FIXED fallback init pair ring4-step8.pot.mhead2 from ring4-step8.pot.mhead2.txt
+Loaded FIXED fallback init pair oh3-oh2 from oh3-oh2.txt
+Loaded FIXED fallback init pair oh4-chme from oh4-chme.txt
+Loaded FIXED fallback init pair oh2-ring2 from oh2-ring2.txt
+Loaded FIXED fallback init pair ring2-ter2 from ring2-ter2.txt
+Loaded FIXED fallback init pair head-water from head-water.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh3 from ring2-step8.pot.oh3.txt
+Loaded FIXED fallback init pair head-ring3 from head-ring3.txt
+Loaded FIXED fallback init pair ring3-step8.pot.ter2 from ring3-step8.pot.ter2.txt
+Loaded FIXED fallback init pair oh5-cterm from oh5-cterm.txt
+Loaded FIXED fallback init pair ctail-chme from ctail-chme.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh1 from ring3-step8.pot.oh1.txt
+Loaded FIXED fallback init pair amide-oh3 from amide-oh3.txt
+Loaded FIXED fallback init pair amide-stick1 from amide-stick1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.head from ring2-step8.pot.head.txt
+Loaded FIXED fallback init pair oh1-head from oh1-head.txt
+Loaded FIXED fallback init pair chme-ring3 from chme-ring3.txt
+Loaded FIXED fallback init pair cterm-ring2 from cterm-ring2.txt
+Loaded FIXED fallback init pair ring2-ring2 from ring2-ring2.txt
+Loaded FIXED fallback init pair oh5-ring2 from oh5-ring2.txt
+Loaded FIXED fallback init pair ctail-cterm from ctail-cterm.txt
+Loaded FIXED fallback init pair oh1-ring1 from oh1-ring1.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh5 from ring2-step8.pot.oh5.txt
+Loaded FIXED fallback init pair oh2-ring3 from oh2-ring3.txt
+Loaded FIXED fallback init pair mhead2-head from mhead2-head.txt
+Loaded FIXED fallback init pair oh5-stick2 from oh5-stick2.txt
+Loaded FIXED fallback init pair oh3-ring3 from oh3-ring3.txt
+Loaded FIXED fallback init pair oh1-oh3 from oh1-oh3.txt
+Loaded FIXED fallback init pair mhead2-oh4 from mhead2-oh4.txt
+Loaded FIXED fallback init pair mhead2-mhead2 from mhead2-mhead2.txt
+Loaded FIXED fallback init pair chead-ring from chead-ring.txt
+Loaded FIXED fallback init pair chme-chme from chme-chme.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh4 from ring3-step8.pot.oh4.txt
+Loaded FIXED fallback init pair oh5-water from oh5-water.txt
+Loaded FIXED fallback init pair chead-ring4 from chead-ring4.txt
+Loaded FIXED fallback init pair oh2-chme from oh2-chme.txt
+Loaded FIXED fallback init pair oh3-chead from oh3-chead.txt
+Loaded FIXED fallback init pair ring3-step8.pot.amide from ring3-step8.pot.amide.txt
+Loaded FIXED fallback init pair ter2-oh1 from ter2-oh1.txt
+Loaded FIXED fallback init pair stick1-oh2 from stick1-oh2.txt
+Loaded FIXED fallback init pair tail-oh5 from tail-oh5.txt
+Loaded FIXED fallback init pair cterm-ring1 from cterm-ring1.txt
+Loaded FIXED fallback init pair mhead2-stick1 from mhead2-stick1.txt
+Loaded FIXED fallback init pair oh1-ring from oh1-ring.txt
+Loaded FIXED fallback init pair cterm-chme from cterm-chme.txt
+Loaded FIXED fallback init pair ring-water from ring-water.txt
+Loaded FIXED fallback init pair ring2-step8.pot.oh2 from ring2-step8.pot.oh2.txt
+Loaded FIXED fallback init pair oh3-head from oh3-head.txt
+Loaded FIXED fallback init pair ring1-step8.pot.oh1 from ring1-step8.pot.oh1.txt
+Loaded FIXED fallback init pair oh5-oh1 from oh5-oh1.txt
+Loaded FIXED fallback init pair ring3-ter2 from ring3-ter2.txt
+Loaded FIXED fallback init pair ring1-step8.pot.amide from ring1-step8.pot.amide.txt
+Loaded FIXED fallback init pair oh4-ring from oh4-ring.txt
+Loaded FIXED fallback init pair head-cterm from head-cterm.txt
+Loaded FIXED fallback init pair ring3-ring3 from ring3-ring3.txt
+Loaded FIXED fallback init pair ctail-ring1 from ctail-ring1.txt
+Loaded FIXED fallback init pair oh1-oh1 from oh1-oh1.txt
+Loaded FIXED fallback init pair ring1-ring4 from ring1-ring4.txt
+Loaded FIXED fallback init pair chme-ring2 from chme-ring2.txt
+Loaded FIXED fallback init pair amide-oh1 from amide-oh1.txt
+Loaded FIXED fallback init pair amide-ring1 from amide-ring1.txt
+Loaded FIXED fallback init pair cterm-water from cterm-water.txt
+Loaded FIXED fallback init pair oh5-chead from oh5-chead.txt
+Loaded FIXED fallback init pair oh2-ring from oh2-ring.txt
+Loaded FIXED fallback init pair mhead2-oh5 from mhead2-oh5.txt
+Loaded FIXED fallback init pair oh3-ring4 from oh3-ring4.txt
+Loaded FIXED fallback init pair oh1-ring4 from oh1-ring4.txt
+Loaded FIXED fallback init pair ring4-tail from ring4-tail.txt
+Loaded FIXED fallback init pair ring3-ring4 from ring3-ring4.txt
+Loaded FIXED fallback init pair ring3-step8.pot.oh3 from ring3-step8.pot.oh3.txt
+Loaded FIXED fallback init pair chead-ring3 from chead-ring3.txt
+Loaded FIXED fallback init pair mhead2-stick2 from mhead2-stick2.txt
+Loaded FIXED fallback init pair ring2-step8.pot.tail from ring2-step8.pot.tail.txt
+Loaded FIXED fallback init pair mhead2-water from mhead2-water.txt
+Loaded FIXED fallback init pair oh3-ctail from oh3-ctail.txt
+Loaded FIXED fallback init pair oh5-oh3 from oh5-oh3.txt
+Loaded FIXED fallback init pair mhead2-ring2 from mhead2-ring2.txt
+Loaded FIXED fallback init pair ring4-step8.pot.amide from ring4-step8.pot.amide.txt
+Loaded FIXED fallback init pair chme-ring1 from chme-ring1.txt
+Loaded FIXED fallback init pair mhead2-ring4 from mhead2-ring4.txt
+Loaded FIXED fallback init pair ter2-chme from ter2-chme.txt
+Loaded FIXED fallback init pair head-head from head-head.txt
+Loaded FIXED fallback init pair sticky-water from sticky-water.txt
+Loaded FIXED fallback init pair ester-water from ester-water.txt
+Loaded FIXED fallback init pair taild-water from taild-water.txt
+Loaded FIXED fallback init pair tail2-water from tail2-water.txt
+Added fixed potentials: PAIR_DIR=265 tables, EXTRA_DIR=4 tables
+Loaded GLOBAL PRETRAINED pair ester-sticky
+Loaded GLOBAL PRETRAINED pair amide-sticky
+Loaded GLOBAL PRETRAINED pair tail-tail2
+Loaded GLOBAL PRETRAINED pair ester-taild
+Loaded GLOBAL PRETRAINED pair sticky-tail
+Loaded GLOBAL PRETRAINED pair mhead2-sticky
+Loaded GLOBAL PRETRAINED pair sticky-sticky
+Loaded GLOBAL PRETRAINED pair ester-ter2
+Loaded GLOBAL PRETRAINED pair tail-taild
+Loaded GLOBAL PRETRAINED pair amide-ester
+Loaded GLOBAL PRETRAINED pair taild-taild
+Loaded GLOBAL PRETRAINED pair oh1-taild
+Loaded GLOBAL PRETRAINED pair sticky-tail2
+Loaded GLOBAL PRETRAINED pair ester-ester
+Loaded GLOBAL PRETRAINED pair ester-tail
+Loaded GLOBAL PRETRAINED pair oh2-sticky
+Loaded GLOBAL PRETRAINED pair amide-tail2
+Loaded GLOBAL PRETRAINED pair tail2-tail2
+Loaded GLOBAL PRETRAINED pair oh1-tail2
+Loaded GLOBAL PRETRAINED pair oh1-sticky
+Loaded GLOBAL PRETRAINED pair tail2-ter2
+Loaded GLOBAL PRETRAINED pair mhead2-taild
+Loaded GLOBAL PRETRAINED pair ester-mhead2
+Loaded GLOBAL PRETRAINED pair taild-ter2
+Loaded GLOBAL PRETRAINED pair mhead2-tail2
+Loaded GLOBAL PRETRAINED pair ester-oh1
+Loaded GLOBAL PRETRAINED pair oh2-tail2
+Loaded GLOBAL PRETRAINED pair tail2-taild
+Loaded GLOBAL PRETRAINED pair sticky-taild
+Loaded GLOBAL PRETRAINED pair ester-oh2
+Loaded GLOBAL PRETRAINED pair oh2-taild
+Loaded GLOBAL PRETRAINED pair ester-tail2
+Loaded GLOBAL PRETRAINED pair sticky-ter2
+Loaded GLOBAL PRETRAINED pair amide-taild
+Loaded GLOBAL INIT fallback pair chead-ester from ester-chead.txt
+Loaded GLOBAL INIT fallback pair chead-sticky from sticky-chead.txt
+Loaded GLOBAL INIT fallback pair chead-tail2 from tail2-chead.txt
+Loaded GLOBAL INIT fallback pair chead-taild from taild-chead.txt
+Loaded GLOBAL INIT fallback pair chme-ester from ester-chme.txt
+Loaded GLOBAL INIT fallback pair chme-sticky from sticky-chme.txt
+Loaded GLOBAL INIT fallback pair chme-tail2 from tail2-chme.txt
+Loaded GLOBAL INIT fallback pair chme-taild from taild-chme.txt
+Loaded GLOBAL INIT fallback pair ctail-ester from ester-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-sticky from sticky-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-tail2 from tail2-ctail.txt
+Loaded GLOBAL INIT fallback pair ctail-taild from taild-ctail.txt
+Loaded GLOBAL INIT fallback pair cterm-ester from ester-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-sticky from sticky-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-tail2 from tail2-cterm.txt
+Loaded GLOBAL INIT fallback pair cterm-taild from taild-cterm.txt
+Loaded GLOBAL INIT fallback pair ester-ring1 from ester-ring1.txt
+Loaded GLOBAL INIT fallback pair ester-ring2 from ester-ring2.txt
+Loaded GLOBAL INIT fallback pair ester-ring3 from ester-ring3.txt
+Loaded GLOBAL INIT fallback pair ester-ring4 from ester-ring4.txt
+Loaded GLOBAL INIT fallback pair ring1-sticky from ring1-sticky.txt
+Loaded GLOBAL INIT fallback pair ring1-tail2 from ring1-tail2.txt
+Loaded GLOBAL INIT fallback pair ring1-taild from ring1-taild.txt
+Loaded GLOBAL INIT fallback pair ring2-sticky from ring2-sticky.txt
+Loaded GLOBAL INIT fallback pair ring2-tail2 from ring2-tail2.txt
+Loaded GLOBAL INIT fallback pair ring2-taild from ring2-taild.txt
+Loaded GLOBAL INIT fallback pair ring3-sticky from ring3-sticky.txt
+Loaded GLOBAL INIT fallback pair ring3-tail2 from ring3-tail2.txt
+Loaded GLOBAL INIT fallback pair ring3-taild from ring3-taild.txt
+Loaded GLOBAL INIT fallback pair ring4-sticky from ring4-sticky.txt
+Loaded GLOBAL INIT fallback pair ring4-tail2 from ring4-tail2.txt
+Loaded GLOBAL INIT fallback pair ring4-taild from ring4-taild.txt
+Types in all states: ['amide', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2'] Number of types: 11
+Global safe r_cut: 5.431623
+Types in ANY state: ['amide', 'chead', 'chme', 'ctail', 'cterm', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'ring1', 'ring2', 'ring3', 'ring4', 'sticky', 'tail', 'tail2', 'taild', 'ter2', 'water']
+Types in ALL states: ['amide', 'ester', 'head', 'mhead2', 'oh1', 'oh2', 'sticky', 'tail', 'tail2', 'taild', 'ter2']
+[FIXED] ester-head
+source: current_stage_previous_output -> ester-head.csv
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: []
+Added FIXED ester-head (previous stage; source=current_stage_previous_output, file=ester-head.csv)
+[FIXED] head-sticky
+source: current_stage_previous_output -> head-sticky.csv
+used states: ['EOS_LPP', 'bulk_EOS_FFA']
+ignored states: []
+Added FIXED head-sticky (previous stage; source=current_stage_previous_output, file=head-sticky.csv)
+[OPTIMIZE] head-tail2
+source: init_dir -> tail2-head.txt
+used states: ['EOS_LPP']
+ignored states: ['bulk_EOS_FFA']
+Added OPTIMIZE head-tail2 (source=init_dir, file=tail2-head.txt)
+[FIXED] head-taild
+source: current_stage_previous_output -> head-taild.csv
+used states: ['EOS_LPP']
+ignored states: ['bulk_EOS_FFA']
+Added FIXED head-taild (previous stage; source=current_stage_previous_output, file=head-taild.csv)
+Added optimize=True pairs: 1
+Added optimize=False (fixed) pairs: 3
+Skipped (type missing in any state): 0
+Staring cycle 1/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb53a010>
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 213.07519756119243
+
+Starting simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb78cc90>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 0 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 62.0554754914087
+
+Force: head-tail2, State: EOS_LPP, Iteration: 0, Fit score:0.890777
+
+smoothing potential: head-tail2
+Staring cycle 2/10 with steps = 100000
+---Optimization: 1 of 1---
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb48edd0>
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.99209704751462
+
+Starting simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb3929d0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 1 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 62.00809874383944
+
+Force: head-tail2, State: EOS_LPP, Iteration: 1, Fit score:0.947298
+
+smoothing potential: head-tail2
+Staring cycle 3/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb3c1b90>
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 213.35733549876122
+
+Starting simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb8dde50>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 2 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 62.02531927023246
+
+Force: head-tail2, State: EOS_LPP, Iteration: 2, Fit score:0.961945
+
+smoothing potential: head-tail2
+Staring cycle 4/10 with steps = 250000
+---Optimization: 1 of 1---
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb40ef10>
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.32785749329457
+
+Starting simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb545750>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 3 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.898570754301105
+
+Force: head-tail2, State: EOS_LPP, Iteration: 3, Fit score:0.966749
+
+smoothing potential: head-tail2
+Staring cycle 5/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb4fb910>
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 213.34954052505313
+
+Starting simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb8df750>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 4 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.91511583218993
+
+Force: head-tail2, State: EOS_LPP, Iteration: 4, Fit score:0.981732
+
+smoothing potential: head-tail2
+Staring cycle 6/10 with steps = 500000
+---Optimization: 1 of 1---
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb8d26d0>
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.55512275426273
+
+Starting simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb4effd0>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 5 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.83929932545561
+
+Force: head-tail2, State: EOS_LPP, Iteration: 5, Fit score:0.966414
+
+smoothing potential: head-tail2
+Staring cycle 7/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb464c90>
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.9470255777312
+
+Starting simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb592c10>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 6 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.81216777634543
+
+Force: head-tail2, State: EOS_LPP, Iteration: 6, Fit score:0.985420
+
+smoothing potential: head-tail2
+Staring cycle 8/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb2b9b90>
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.68992003109344
+
+Starting simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb296590>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 7 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.90232792085102
+
+Force: head-tail2, State: EOS_LPP, Iteration: 7, Fit score:0.965321
+
+smoothing potential: head-tail2
+Staring cycle 9/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb8d4250>
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.3061684171299
+
+Starting simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb5d2350>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 8 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.96510064458894
+
+Force: head-tail2, State: EOS_LPP, Iteration: 8, Fit score:0.970059
+
+smoothing potential: head-tail2
+Staring cycle 10/10 with steps = 1000000
+---Optimization: 1 of 1---
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14
+Running on device <hoomd.device.CPU object at 0x7f6cbb685f50>
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: bulk_EOS_FFA; kT: 9.9; Alpha0: 0.14, TSP = 212.34597154225332
+
+Starting simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71
+Running on device <hoomd.device.CPU object at 0x7f6cbb5de890>
+*Warning*: Systems with many angle types perform poorly or result in shared memory errors on the GPU.
+Finished simulation 9 for state <class 'msibi.state.State'>; Name: EOS_LPP; kT: 6.06; Alpha0: 0.71, TSP = 61.96765134114637
+
+Force: head-tail2, State: EOS_LPP, Iteration: 9, Fit score:0.978446
+
+smoothing potential: head-tail2
