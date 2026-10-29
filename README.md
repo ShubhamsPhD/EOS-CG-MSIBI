@@ -25,7 +25,10 @@ Allows us to set a pair to not be optimised by a particular state + instead of e
 
 run_msibi_v5: Runs on the main build. Tries to copy whats been done in v4 with those v4 features added in script instead of msibi directly.
 
-run_msibi_v5_34.py, run_msibi_cholPairs.py, and run_msibi_ffaPairs.py were used to build the "working" self assembling EOS model.
+NOTE: The files in originalRun were used in the MSIBI run to create the self-assembling LPP. While we could get an LPP with an almost experimentally observed thickness, the main issue seen is the presence of EOS chains in the central layer
+  run_msibi_v5_34.py, run_msibi_cholPairs.py, and run_msibi_ffaPairs.py were used to build the "working" self assembling EOS model.
+
+The ATM-to-CG-Mapping folder contains the files used to map the atomistic target states to a CG representation.
 
 2. SUBMIT SCRIPTS:
 
